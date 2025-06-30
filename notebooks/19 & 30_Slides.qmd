@@ -1,0 +1,119 @@
+---
+title: 'Superstore Dataset: Exploratory and Descriptive Analysis'
+author: Group 19 & 30
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    css: styles.css
+    transition: slide
+jupyter: python3
+---
+
+
+## 1. Introduction
+
+- **Dataset Overview:** This analysis explores the Superstore Dataset to understand sales trends, customer behavior, and profitability.
+- **Purpose:** Our goal is to uncover performance drivers, identify issues, and provide data-driven recommendations for business improvement.
+
+---
+
+## 2. Key Insights
+
+- **Profit Volatility:** Some orders result in significant losses (as low as -$6,600).
+- **Seasonal Sales Trends:** Sales peak in November and December but dip sharply in February.
+- **Regional Differences:** The West leads in sales but also has the highest return rate (15.31%), compared to Central (3.96%).
+- **Discount Impact:** Discounts significantly reduce profit (T-stat: -15.74, p < 0.001).
+- **Multiple Influences:** Profitability is impacted by product type, customer segment, and shipping method.
+
+---
+
+## 3. Visual Insights
+
+
+
+### Total Sales Trend by Month
+
+![Total Sales Trend by Month](results/total_sales_by_month_all_years_line_chart.png){width=80%}
+
+- **Insight:** Sales peak at the end of the year and drop in February, suggesting a need for seasonal planning.
+
+---
+
+### Profit Distribution Across Customer Segments
+
+![Profit by Segment](results/profit_by_segment_boxplot.png){width=80%}
+
+- **Insight:** Different customer segments (Consumer, Corporate, Home Office) yield varying profit levels, with notable outliers and losses.
+
+---
+
+### Sales Distribution by Region
+
+![Sales by Region](results/sales_by_region_sorted_bar_chart.png){width=80%}
+
+- **Insight:** The West and East regions drive most sales. However, the West also has high return rates, needing investigation.
+
+---
+
+### Correlation Matrix of Numerical Variables
+
+![Correlation Matrix](results/correlation_matrix_heatmap.png){width=80%}
+
+- **Insight:** A strong negative correlation between discount and profit indicates that higher discounts reduce profitability.
+
+---
+
+### Association between Ship Mode and Returns
+
+![Returns by Ship Mode](results/shipmode_returns_heatmap.png){width=80%}
+
+- **Insight:** Premium shipping options like "Same Day" and "First Class" have higher return rates, suggesting potential fulfillment or expectation issues.
+
+---
+
+### Statistical Tests Summary
+
+- **ANOVA (Profit by Category):**
+  - p-value: 3.47 × 10⁻²⁴
+  - Product category significantly affects profit.
+
+- **T-test (Discounted vs. Non-discounted Profit):**
+  - p-value: 4.36 × 10⁻⁵⁵
+  - Discounts lead to lower profits.
+
+- **Chi-Square (Region vs. Returns):**
+  - p-value: 0.0000
+  - Return rates vary significantly by region.
+
+---
+
+## 4. Data-Driven Recommendations
+
+
+1. **Optimize Discount Strategies**  
+   Avoid blanket discounts—target loyal or bulk-buying customers to preserve margins.
+
+2. **Reduce Returns in the West**  
+   Investigate root causes and replicate successful practices from low-return regions like Central.
+
+3. **Customize Offers by Segment & Product**  
+   Tailor pricing and marketing by customer type and product profitability to maximize ROI.
+
+---
+
+4. **Prepare for Year-End, Boost Slow Months**  
+   Align inventory and workforce for November/December, and run promos in slow periods like February.
+
+5. **Enhance Shipping Practices**  
+   Improve reliability in premium shipping options to lower return rates and increase customer satisfaction.
+
+---
+
+## 5. Conclusion  
+
+
+This superstore is performing well overall, especially in Technology and top cities like New York. However, high returns, regional sales gaps, and low-performing product categories offer clear areas for improvement. By enhancing marketing in low-sales periods, focusing on customer satisfaction, and optimizing the product mix, the business can grow more evenly and profitably.
+
+
+**Thank you!**

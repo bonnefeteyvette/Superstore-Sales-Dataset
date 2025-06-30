@@ -1,0 +1,217 @@
+---
+title: Superstore Performance Dataset – Exploratory and Descriptive Analysis
+author:
+  - name: "UWERA Bonnefete yvette"
+    affiliation: "Data analyst"
+date: "2025-06-27"
+
+format:
+  html:
+    page-layout: full
+    self-contained: true
+    code-fold: true
+    code-tools: true
+    code-block-bg: true
+    code-block-border-left: "#31BAE9"
+    number-sections: true
+    number-tables: true
+    toc: true
+    toc-location: left
+    toc-title: Contents
+jupyter:
+  kernelspec:
+    display_name: "Python 3"
+    language: python
+    name: python3
+
+---
+
+In this notebook, we focus on the **exploratory and descriptive analysis** of the cleaned version of the **Superstore Performance Dataset**, a popular dataset often used for practicing data analysis, visualization, and business intelligence tasks. The dataset contains retail transaction records, customer details, product categories, and regional performance data.
+
+Effective exploratory analysis is crucial for uncovering patterns, trends, and potential issues in the data, which guides further analysis and decision-making. Here, we examine key metrics such as **sales, profit, discount, and quantity**, as well as their distribution across **categories, regions, and time periods**.
+
+
+
+We start by importing essential Python libraries for data handling, analysis, and visualization:
+
+- `pandas` for structured data operations.
+
+- `numpy` for numerical operations.
+
+- `os` for interacting with the operating system and directory structures.
+
+```{python}
+# Import libraries
+
+import pandas as pd
+import numpy as np
+import os
+```
+ 
+## Define and Create Directory Paths
+
+To ensure reproducibility and organized storage, we programmatically create directories for:
+
+- **raw data**
+- **processed data**
+- **results**
+- **documentation**
+
+These directories will store intermediate and final outputs for reproducibility.
+
+```{python}
+#| echo: false
+#| output: false
+# Get working directory
+current_dir = os.getcwd()
+# Go one directory up to the root directory
+project_root_dir = os.path.dirname(current_dir)
+# define paths to the data files
+data_dir = os.path.join(project_root_dir, 'data')
+raw_dir = os.path.join(data_dir, 'raw')
+processed_dir = os.path.join(data_dir, 'processed')
+# Define paths to the results folder
+results_dir  = os.path.join(project_root_dir, 'results')
+# Define paths to the docs folder
+docs_dir = os.path.join(project_root_dir, 'docs')
+
+# create directories if they do not exist 
+os.makedirs(raw_dir, exist_ok = True )
+os.makedirs(processed_dir, exist_ok = True )
+os.makedirs(results_dir, exist_ok = True)
+os.makedirs(docs_dir, exist_ok = True)
+```
+
+##  Read in the data
+
+We load the **Superstore Performance Dataset** as an Excel file (`Superstore.xlsx`). The dataset consists of multiple sheets: `Orders`, `Returns`, and `People`. These sheets are read separately and then merged to form a comprehensive dataset for analysis.
+
+ **Key considerations**
+- **File structure:** The dataset is stored in a multi-sheet Excel file. It’s important to read each sheet carefully and ensure the correct relationships between them.
+- **Merging data:**  
+  - The `Orders` and `Returns` sheets are merged using `Order ID` to identify which orders were returned. We use a **left join** to keep all orders and add return information where available.  
+  - The `People` sheet is merged on `Region` to associate each order with the responsible regional manager.
+- **Data integrity:** The merge operations may introduce missing values (e.g., orders that weren’t returned or regions with no associated manager). These should be handled carefully in later analysis.
+- **File path handling:** The use of `os.path.join` ensures that file paths are constructed dynamically, improving portability across different systems and directory structures.
+- **Previewing the data:** Displaying the first 10 rows (`head(10)`) helps confirm that the data has been loaded and merged as expected before further analysis.
+
+::: {.panel-tabset}
+## Output {.active}
+
+
+```{python} 
+#| label: superstore-performance 
+#| tbl-cap: superstore performance dashboard
+store_data_filename = os.path.join(raw_dir, "Superstore.xlsx")
+
+ #Load the sheets
+orders_df = pd.read_excel(store_data_filename, sheet_name='Orders')
+returns_df = pd.read_excel(store_data_filename, sheet_name='Returns')
+people_df = pd.read_excel(store_data_filename, sheet_name='People')
+
+#Merge orders with returns on Order ID**
+orders_with_returns = pd.merge(orders_df, returns_df, on='Order ID', how='left')
+
+#Merge with people on Region**
+merged_store = pd.merge(orders_with_returns, people_df, on='Region', how='left')
+
+#Show first 10 rows
+merged_store.head(10)
+```
+We also inspect the dataset shape. We see that the data has *9,994* rows and *23* columns.
+```{python}
+#| output: false
+merged_store.shape
+```
+In addition, we check the data types using `.info`. 
+```{python}
+#| output: false
+merged_store.info()
+```
+:::
+
+## Data Cleaning
+
+## Understanding the Dataset
+
+Before proceeding with data cleaning, it is essential to understand the variables in the **Superstore** dataset. This helps us determine appropriate cleaning and transformation strategies. The table below summarizes the types, descriptions, and typical values or ranges of the variables in our dataset.
+
+**Table 1: Summary of variables in the dataset**
+
+| Variable        | Type         | Description                                  | Example Values / Range |
+|-----------------|--------------|----------------------------------------------|-----------------------|
+| Customer ID      | Categorical   | Unique identifier for each customer          | `CG-12520`, `TB-20145` |
+| Customer Name    | Categorical   | Full name of the customer                    | `Claire Gute`, `Sean Miller` |
+| Segment          | Categorical   | Market segment the customer belongs to       | `Consumer`, `Corporate`, `Home Office` |
+| Country          | Categorical   | Country of transaction                       | `United States` |
+| City             | Categorical   | City where the order was placed              | `Los Angeles`, `New York` |
+| State            | Categorical   | State where the order was placed             | `California`, `Texas` |
+| Postal Code      | Categorical/Numeric | Postal code of customer location         | 90036, 10024 |
+| Region           | Categorical   | Regional division of the business            | `West`, `East`, `Central`, `South` |
+| Product ID       | Categorical   | Unique identifier for product                | `FUR-BO-10001798` |
+| Category         | Categorical   | Product category                             | `Furniture`, `Office Supplies`, `Technology` |
+| Sub-Category     | Categorical   | Product sub-category                         | `Bookcases`, `Chairs`, `Phones` |
+| Product Name     | Categorical   | Name of the product                          | `Bush Somerset Collection Bookcase` |
+| Sales            | Numeric       | Dollar amount of sales                       | 2.99 – 22,638.48 |
+| Quantity         | Numeric       | Number of units sold                         | 1 – 14 |
+| Discount         | Numeric       | Discount applied to sale (0 to 1)            | 0.0 – 0.8 |
+| Profit           | Numeric       | Profit amount in dollars                     | -6599.98 – 8399.98 |
+| Returned         | Categorical   | Indicates if product was returned            | `Yes`, `No`, (can be missing) |
+| Person           | Categorical   | Salesperson or handler                       | Cassandra Brandow, Anna Andreadi |
+
+---
+
+
+This line is used to display all the column names in the merged_store DataFrame. It helps us understand the structure of the dataset by showing which fields (such as Order ID, Sales, Category, etc.) are available for analysis.                                                     
+
+```{python}
+merged_store.columns
+```
+
+## Deal with missing values
+To ensure the quality of our dataset, we performed an initial check for missing values in the merged dataset `merged_store`. The following code was used to identify any null values across all columns:
+
+```{python}
+merged_store.isnull().sum()
+```
+
+
+Using the `.isnull().sum()` function, we identified columns with missing values in the **Superstore** dataset. The analysis revealed:
+
+- `Returned` has **9,194 missing values**
+
+To handle this, we applied the following data cleaning approach:
+
+- Imputed missing values in the **`Returned`** column with `"NO"` to indicate that these transactions are considered not returned, in the absence of return info].fillna('NO')
+
+```{python}
+merged_store['Returned'] = merged_store['Returned'].fillna('NO')
+```
+
+```{python}
+merged_store.isnull().sum()
+```
+
+## Removing Duplicates
+
+Duplicates can distort statistical summaries and model performance. Using `.duplicated().sum()`, we count duplicate records.
+
+We confirm that we have no duplicates in the dataset.
+
+```{python}
+merged_store.duplicated().sum()
+```
+
+We also examined the current structure of the dataset and confirmed that it contains **9,994 rows** and **23 columns**, representing a comprehensive collection of retail transaction records.
+
+```{python}
+merged_store.shape
+```
+
+Finally, we save the clean, processed dataset as a CSV file in our processed directory for future modelling and analysis.
+
+```{python}
+merged_store.to_csv('SuperStore-Cleaned.csv', index=False)
+```
+
+

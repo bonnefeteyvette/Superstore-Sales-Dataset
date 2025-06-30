@@ -1,0 +1,492 @@
+---
+title: Superstore Performance Dataset – Exploratory and Descriptive Analysis
+author:
+  - name: "UWERA Bonnefete yvette"
+    affiliation: "Data analyst"
+date: "2025-06-27"
+
+format:
+  html:
+    page-layout: full
+    self-contained: true
+    code-fold: true
+    code-tools: true
+    code-block-bg: true
+    code-block-border-left: "#31BAE9"
+    number-sections: true
+    number-tables: true
+    toc: true
+    toc-location: left
+    toc-title: Contents
+jupyter:
+  kernelspec:
+    display_name: "Python 3"
+    language: python
+    name: python3
+
+---
+
+
+In this notebook, we perform an in-depth exploratory and descriptive analysis of the **Superstore Performance Dataset**, a rich dataset capturing retail transaction details across various product categories, regions, and customer segments.
+
+This phase of analysis is crucial for uncovering trends, identifying potential business insights, and gaining a solid understanding of the dataset’s structure before developing visual dashboards or advanced analytics. We explore the distribution of key numerical and categorical variables, examine relationships between sales performance metrics (such as sales, profit, and quantity) and business dimensions (such as region, category, and customer segment), and use visualizations to highlight important patterns. Particular focus is placed on sales performance across regions, product categories, and return behavior, helping to build a strong foundation for actionable recommendations and strategic decision-making.
+
+We begin our analysis by importing the core Python libraries required for data processing, numerical computation, visualization, and directory management:
+
+- **pandas**: Enables efficient manipulation, filtering, and aggregation of structured tabular data, forming the backbone of our analysis pipeline.
+- **numpy**: Provides support for numerical operations, array-based computations, and statistical summaries.
+- **os**: Facilitates interaction with the file system, allowing us to build flexible and portable directory paths for data and output management.
+- **plotly.express**: A high-level graphing library that enables creation of interactive, publication-quality visualizations, which we use extensively to uncover patterns and present insights throughout the notebook.
+
+
+```{python}
+# Import libraries
+
+import pandas as pd
+import numpy as np
+import os
+import plotly.express as px
+```
+
+## Define and Create Directory Paths
+
+To ensure reproducibility and organized storage, we programmatically create directories if they don't already exist for:
+
+- **raw data**
+- **processed data**
+- **results**
+- **documentation**
+
+These directories will store intermediate and final outputs for reproducibility.
+
+```{python}
+#| echo: false
+#| output: false
+# Get working directory
+current_dir = os.getcwd()
+# Go one directory up to the root directory
+project_root_dir = os.path.dirname(current_dir)
+# define paths to the data files
+data_dir = os.path.join(project_root_dir, 'data')
+raw_dir = os.path.join(data_dir, 'raw')
+processed_dir = os.path.join(data_dir, 'processed')
+# Define paths to the results folder
+results_dir  = os.path.join(project_root_dir, 'results')
+# Define paths to the docs folder
+docs_dir = os.path.join(project_root_dir, 'docs')
+
+# create directories if they do not exist 
+os.makedirs(raw_dir, exist_ok = True )
+os.makedirs(processed_dir, exist_ok = True )
+os.makedirs(results_dir, exist_ok = True)
+os.makedirs(docs_dir, exist_ok = True)
+```
+
+## Loading the Cleaned Dataset
+
+We load the cleaned version of the **Superstore Performance Dataset** from the processed data directory into a Pandas DataFrame. The `head(10)` function displays the first ten records, providing a quick look at key columns such as `Customer ID`, `Segment`, `Country`, `Category`, `Sales`, `Profit`, and `Returned`.
+
+::: {.panel-tabset}
+## Output {.active}
+
+
+```{python} 
+#| label: superstore-performance 
+#| tbl-cap: superstore performance dashboard
+store_data_filename = os.path.join(processed_dir, "SuperStore-Cleaned.csv")
+super_df = pd.read_csv(store_data_filename)
+super_df.head(10)
+```
+
+## Dataset Dimensions and Data Types
+
+Here, we examine the structure of the Superstore dataset:
+
+- The dataset contain 9,994 ** entries and 23** variables.
+- It includes both  **numerical** variables (e.g., `Sales`, `Profit`, `Quantity`, `Discount`) and **categorical** variables (e.g., `Customer ID`, `Segment`, `Region`, `Category`, `Returned`).
+
+Understanding the data types and identifying any null entries is essential before performing detailed analysis, as it guides data cleaning, transformation, and visualization decisions.
+
+We also inspect the dataset shape. We see that the data has *9,994* rows and *23* columns.
+```{python}
+#| output: false
+super_df.shape
+```
+In addition, we check the data types using `.info`. 
+```{python}
+#| output: false
+super_df.info()
+```
+:::
+
+## Summary Statistics: Numerical Variables
+
+This summary provides a snapshot of the distribution and spread of key numerical variables in the Superstore dataset. Below are the main insights:
+
+- **Sales** values range fom **$ 0.4 4 to $22,63848**, with a meanof **$22.86**. The large gap between the mean and maximum suggests a right-skewed distribution, where a few high-value sales significantly impact the average. This is typical in retail, where large orders or bulk items create outliers.
+
+- **Profit** also exhibits a wide range,from **–$6,599.98 (a oss)* to **$8,399.98 (again)**. The mean proft is **$8 .66**, with a standard deviation of   ver *$  234**, indicating large variability. The presence of negative values shows that some transactions resulted in financial losses, possibly due to heavy discounts, returns, or operational costs exceeding sales.
+
+- **Discount** values range between **0.0 and 0.8**, with a mean of **0.16**. This suggests that most transactions occur with low to moderate discount rates. The 25th percentile is 0, which indicates that many orders are sold at full price, while a portion receives promotional pricing.
+
+- **Quantity** of products sold per transaction ranges from **1 to 14**, with a median of **3 units**. Most purchases involve small quantities, reflecting individual or household-level buying behavior.
+
+- **Postal Code**, while numeric in format, represents geographical location and is more appropriately treated as a categorical or identifier column rather than a variable for numerical analysis.
+
+- **Row ID** is a simple index from **1 to 9994**, primarily used for tracking rows and not relevant for analysis.
+
+## Descriptive Statistics Table (for key numerical variables)
+
+| Variable      | Min     | 25%     | Median  | Mean     | 75%     | Max       |
+|---------------|---------|---------|---------|----------|---------|-----------|
+| Sales         | 0.44    | 17.28   | 54.49   | 229.86   | 209.94  | 22,638.48 |
+| Quantity      | 1       | 2       | 3       | 3.79     | 5       | 14        |
+| Discount      | 0.0     | 0.0     | 0.2     | 0.16     | 0.2     | 0.8       |
+| Profit        | -6,599.98 | 1.73  | 8.67    | 28.66    | 29.36   | 8,399.98  |
+
+Understanding these patterns helps uncover outliers, pricing strategies, and customer purchasing behavior — providing a data-driven foundation for improving performance, managing profit margins, and identifying risk areas in sales.
+strategies.
+
+```{python}
+super_df.describe()
+```
+
+## Categorical Variables
+
+```{python}
+super_df.describe(include='object')
+```
+
+```{python}
+super_df['Ship Mode'].value_counts(normalize=True)
+```
+
+```{python}
+super_df['Segment'].value_counts(normalize=True)
+```
+
+```{python}
+super_df['City'].value_counts(normalize=True)
+```
+
+```{python}
+super_df['Region'].value_counts(normalize=True)
+```
+
+```{python}
+super_df['Sub-Category'].value_counts(normalize=True)
+```
+
+## Categorical Variables Summary
+
+## Ship Mode
+The **Standard Class** is the most commonly used shipping method, representing approximately **59.7%** of all orders. This reflects customer preference or company policy favoring cost-effective delivery. **Second Class** (19.5%) and **First Class** (15.4%) follow, while **Same Day** shipping is the least common at **5.4%**, likely due to its higher cost or limited availability.
+
+## Segment
+The **Consumer** segment dominates the customer base, accounting for around **52%** of orders. **Corporate** customers represent about **30%**, while the **Home Office** segment makes up the remaining **18%**. This distribution suggests that the business primarily serves individual consumers, but corporate and home office clients still form significant portions of the market.
+
+## Region
+The dataset is fairly balanced across regions, with the **West** holding the largest share at **32%**, followed by the **East** at **28%**, **Central** at **23%**, and **South** at **16%**. This regional distribution reflects the geographical spread of the business’s customer base.
+
+## City
+The dataset includes orders from **531 unique cities**. The top contributors are **New York City (9.2%)**, **Los Angeles (7.5%)**, **Philadelphia (5.4%)**, **San Francisco (5.1%)**, and **Seattle (4.3%)**. The remaining cities each contribute a small fraction of the total orders, indicating a broad but uneven geographical coverage.
+
+## Sub-Category
+Among product sub-categories:
+- **Binders (15.2%)** and **Paper (13.7%)** are the most frequently sold items, reflecting strong demand for basic office supplies.
+- **Furnishings (9.6%)**, **Phones (8.9%)**, and **Storage (8.5%)** also have notable shares.
+- Lower-volume categories include **Machines (1.2%)** and **Copiers (0.7%)**, which may represent high-value but low-frequency purchases.
+
+## Category Distribution 
+
+```{python}
+super_df_category = super_df.groupby('Category').size().reset_index(name = 'total')
+super_df_category
+```
+
+```{python}
+fig = px.pie(super_df_category, names='Category', values='total', title='Overall Category Distribution', 
+             color_discrete_sequence=['darkcyan','skyblue','#82EEFD'])
+fig.update_layout(template="presentation", paper_bgcolor="rgba(0, 0, 0, 0)", plot_bgcolor ="rgba(0, 0, 0, 0)")
+fig.show()
+fig.write_image(os.path.join(results_dir,'distribution_category_pie_chart.jpg'))
+fig.write_image(os.path.join(results_dir,'distribution_category_pie_chart.png'))
+fig.write_html(os.path.join(results_dir,'distribution_category_pie_chart.html'))
+```
+
+This pie chart shows the overall category distribution:
+
+- **Furniture:** 2,121 transactions  
+- **Office Supplies:** 6,026 transactions  
+- **Technology:** 1,847 transactions  
+
+Office Supplies dominate the sales volume, accounting for the majority of transactions. Furniture and Technology make up smaller but significant portions of the total sales. This distribution highlights where customer demand is concentrated across product categories.
+
+## Sales Distribution by Category
+
+```{python}
+sales_by_category = super_df.groupby('Category')['Sales'].sum().reset_index()
+sales_by_category 
+```
+
+```{python}
+fig = px.pie(sales_by_category, names='Category', values='Sales', title='Sales Distribution by Category', 
+             color_discrete_sequence=['darkcyan','skyblue','#82EEFD'])
+fig.update_layout(template="presentation", paper_bgcolor="rgba(0, 0, 0, 0)", plot_bgcolor ="rgba(0, 0, 0, 0)")
+fig.show()
+fig.write_image(os.path.join(results_dir,'sales_distribution_category_pie_chart.jpg'))
+fig.write_image(os.path.join(results_dir,'sales_distribution_category_pie_chart.png'))
+fig.write_html(os.path.join(results_dir,'sales_distribution_category_pie_chart.html'))
+```
+
+This pie chart shows the sales distribution by category:
+
+- **Furniture:** $741,999.80
+
+- **Office Supplies:**  $719,047.03
+  
+- **Technology:** $836,154.03  
+
+Technology leads in total sales value, followed closely by Furniture and Office Supplies. This distribution highlights the revenue contributions of each category and helps identify key drivers of overall sales performance.
+
+## Sales Distribution by Sub-Category
+
+```{python}
+sales_by_sub_category = super_df.groupby('Sub-Category')['Sales'].sum().reset_index().sort_values(by='Sales', ascending=True)
+sales_by_sub_category 
+```
+
+```{python}
+fig = px.bar(sales_by_sub_category, 
+             x ='Sales', 
+             y ='Sub-Category', title='Sales Distribution by sub-Category', 
+             color_discrete_sequence=['darkcyan'],
+             orientation='h',
+            height= 550,
+             text = 'Sales',
+            width= 900)
+fig.update_traces(texttemplate='%{x:.0f}', textposition = 'inside')
+fig.update_layout(template="presentation", paper_bgcolor="rgba(0, 0, 0, 0)", plot_bgcolor ="rgba(0, 0, 0, 0)",
+                 margin = dict(l=150, r=10, t=50, b=50))
+fig.show()
+fig.write_image(os.path.join(results_dir,'sales_distribution_sub_category_bar_plot.jpg'))
+fig.write_image(os.path.join(results_dir,'sales_distribution_sub_category_bar_plot.png'))
+fig.write_html(os.path.join(results_dir,'sales_distribution_sub_category_bar_plot.html'))
+```
+
+This bar chart shows the sales distribution by product sub-category:
+
+- **Fasteners:** $3,024.28
+  
+- **Labels:** $12,486.31
+  
+- **Envelopes:** $16,476.40
+   
+- **Art:** $27,118.79
+  
+- **Supplies:** $46,673.54
+  
+- **Paper:** $78,479.21
+   
+- **Furnishings:** $91,705.16
+  
+- **Appliances:** $107,532.16
+  
+- **Bookcases:** $114,880.00
+  
+- **Copiers:** $149,528.03
+  
+- **Accessories:** $167,380.32
+  
+- **Machines:** $189,238.63
+  
+- **Binders:** $203,412.73
+   
+- **Tables:** $206,965.53
+  
+- **Storage:** $223,843.61
+   
+- **Chairs:** $328,449.10
+  
+- **Phones:** $330,007.05  
+
+The sales distribution highlights that **Phones**, **Chairs**, and **Storage** are among the highest revenue-generating sub-categories, while **Fasteners** and **Labels** contribute smaller portions. This insight helps prioritize inventory and marketing focus on the most lucrative product lines.
+
+## Sales Distribution by Ship Mode
+
+```{python}
+sales_by_sub_ship = super_df.groupby('Ship Mode')['Sales'].sum().reset_index().sort_values(by='Sales', ascending=True)
+sales_by_sub_ship
+```
+
+```{python}
+fig = px.bar(sales_by_sub_ship, 
+             x='Ship Mode', 
+              y='Sales', title='Sales Distribution by Ship Mode', 
+             color_discrete_sequence=['darkcyan'],
+             orientation='v',
+             text='Sales'
+            )
+fig.update_traces(texttemplate='%{y:.0f}', textposition = 'inside')
+fig.update_layout(template="presentation", paper_bgcolor="rgba(0, 0, 0, 0)", plot_bgcolor ="rgba(0, 0, 0, 0)",)
+fig.show()
+fig.write_image(os.path.join(results_dir,'sales_distribution_shipmode_bar_plot.jpg'))
+fig.write_image(os.path.join(results_dir,'sales_distribution_shipmode_bar_plot.png'))
+fig.write_html(os.path.join(results_dir,'sales_distribution_shipmode_bar_plot.html'))
+```
+
+This bar chart shows the sales distribution by Ship Mode:
+
+- **Same Day:** $128,363
+  
+- **First Class:** $351,428
+  
+- **Second Class:** $459,193
+  
+- **Standard Class:** $1,358,216 
+
+The distribution indicates that **Standard Class** dominates sales volume by a large margin, followed by Second Class and First Class. Same Day shipping accounts for the smallest portion of sales, reflecting its limited use or higher cost.
+
+## Sales Distribution by Region
+
+```{python}
+sales_by_region = super_df.groupby('Region')['Sales'].sum().reset_index().sort_values(by='Sales', ascending=True)
+sales_by_region
+```
+
+```{python}
+fig = px.bar(sales_by_region, 
+             x='Sales', 
+             y='Region', title='Sales Distribution by Region', 
+             color_discrete_sequence=['darkcyan'],
+             text='Sales'
+            )
+fig.update_layout(template="presentation", paper_bgcolor="rgba(0, 0, 0, 0)", plot_bgcolor ="rgba(0, 0, 0, 0)", margin = dict(l=150, r=10, t=50, b=50))
+fig.update_traces(texttemplate='%{x:.0f}', textposition = 'inside')
+fig.show()
+fig.write_image(os.path.join(results_dir,'sales_distribution_region_bar_ploty.jpg'))
+fig.write_image(os.path.join(results_dir,'sales_distribution_region__bar_ploty.png'))
+fig.write_html(os.path.join(results_dir,'sales_distribution_region__bar_ploty.html'))
+```
+
+This bar chart shows the sales distribution by Region:
+
+- **South:** $391,721
+
+- **Central:** $501,239
+
+- **East:** $678,781
+           
+- **West:** $725,457 
+
+The data shows that the **West** region generates the highest sales, followed closely by the **East** region. The **Central** and **South** regions contribute smaller but significant portions to total sales, highlighting regional differences in market size or customer demand.
+
+# Customer Segment Distribution
+
+```{python}
+customer_segment = super_df.groupby('Segment').size().reset_index(name = 'total')
+customer_segment
+```
+
+```{python}
+fig = px.bar(customer_segment, 
+             x ='Segment', 
+             y ='total', title='Customer Segment Distribution', 
+             color_discrete_sequence=['darkcyan'],
+             orientation='v',
+            height= 450,
+             text = 'total',
+            width= 600)
+fig.update_traces(textposition = 'inside')
+fig.update_layout(template="presentation", paper_bgcolor="rgba(0, 0, 0, 0)", plot_bgcolor ="rgba(0, 0, 0, 0)",
+                 margin = dict(l=150, r=10, t=50, b=50))
+fig.show()
+fig.write_image(os.path.join(results_dir,'customersegment_distribution_bar_plot.jpg'))
+fig.write_image(os.path.join(results_dir,'customersegment_distribution_bar_plot.png'))
+fig.write_html(os.path.join(results_dir,'customersegment_distribution_bar_plot.html'))
+```
+
+## Customer Segment Distribution
+
+This bar chart shows the distribution of customers across segments:
+
+- **Consumer:** 5,191 customers
+  
+- **Corporate:** 3,020 customers
+  
+- **Home Office:** 1,783 customers  
+
+The Consumer segment represents the largest group, accounting for over half of the customer base. Corporate clients form a significant portion, while Home Office customers make up the smallest segment. This distribution provides insight into the primary market focus of the business.
+
+# Monthly Sales Distribution
+
+```{python}
+super_df['Order Date'] = pd.to_datetime(super_df['Order Date'])
+super_df['Month'] = super_df['Order Date'].dt.month_name()
+super_df['Month_num'] = super_df['Order Date'].dt.month
+super_df['Month_num']
+```
+
+```{python}
+sales_by_month = super_df.groupby(['Month_num', 'Month'])['Sales'].sum().reset_index()
+sales_by_month = sales_by_month.sort_values('Month_num')
+sales_by_month
+```
+
+```{python}
+fig = px.line(
+    sales_by_month,
+    x='Month',
+    y='Sales',
+    title='Sales Trends Over Time',
+    width= 1000,
+    height= 600,
+    markers=True
+)
+
+fig.update_traces(line=dict(color='darkcyan', width=2),)
+fig.update_layout(
+    xaxis_title='Month',
+    yaxis_title='Total Sales',
+    template='presentation',
+     margin = dict(l=90, r=50)
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir,'salesovertime_line_chart.jpg'))
+fig.write_image(os.path.join(results_dir,'salesovertime_line_chart.png'))
+fig.write_html(os.path.join(results_dir,'salesovertime_line_chart.html'))
+```
+
+## Monthly Sales Distribution
+
+This pie chart shows the distribution of total sales across months:
+
+- **January:** $94,924
+  
+- **February:** $59,751
+  
+- **March:** $205,005
+   
+- **April:** $137,762
+    
+- **May:** $155,028
+   
+- **June:** $152,718
+  
+- **July:** $147,238
+  
+- **August:** $159,044
+   
+- **September:** $307,649
+   
+- **October:** $200,322
+    
+- **November:** $352,461
+  
+- **December:** $325,293
+
+The distribution shows that **November** and **December** generate the highest sales, reflecting seasonal peaks, likely driven by year-end promotions and holiday shopping. **September** also stands out as a strong sales month. In contrast, **February** and **January** have the lowest sales, possibly due to post-holiday slowdowns. These trends highlight key periods for targeted marketing and inventory planning.
+
+
+
