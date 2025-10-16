@@ -1,0 +1,794 @@
+Customer ID,Recency,Frequency,Monetary,Customer Name,R_Score,F_Score,M_Score,RFM_Score,Segment,Marketing Idea
+AA-10315,185,5,5563.56,Alex Avila,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+AA-10375,20,9,1056.39,Allen Armold,1,1,4,114,Others,General promotions and newsletters.
+AA-10480,260,4,1790.5120000000002,Andrew Allen,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+AA-10645,56,6,5086.9349999999995,Anna Andreadi,3,3,1,331,Others,General promotions and newsletters.
+AB-10015,416,3,886.156,Aaron Bergman,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+AB-10060,55,8,7755.620000000001,Adam Bellavance,3,2,1,321,Others,General promotions and newsletters.
+AB-10105,42,10,14473.570999999998,Adrian Barton,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+AB-10150,42,5,966.71,Aimee Bixby,2,3,4,234,Others,General promotions and newsletters.
+AB-10165,26,8,1113.838,Alan Barnes,1,2,4,124,Others,General promotions and newsletters.
+AB-10255,167,9,914.5319999999999,Alejandro Ballentine,4,1,5,415,New Customers,Send welcome emails and first-time coupons.
+AB-10600,51,4,1515.862,Ann Blume,2,4,4,244,At Risk,Send win-back offers or reminders.
+AC-10420,233,3,925.8000000000001,Alyssa Crouse,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+AC-10450,12,7,5527.846,Amy Cox,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+AC-10615,7,5,2537.6859999999997,Ann Chong,1,3,3,133,Others,General promotions and newsletters.
+AC-10660,283,5,657.316,Anna Chung,5,3,5,535,Loyal Customers,Offer loyalty points or free gifts.
+AD-10180,30,8,6106.88,Alan Dominguez,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+AF-10870,42,7,2052.908,Art Ferguson,2,2,3,223,Others,General promotions and newsletters.
+AF-10885,416,4,861.565,Art Foster,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+AG-10270,279,5,2582.8979999999997,Alejandro Grove,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+AG-10300,119,4,367.548,Aleksandra Gannaway,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+AG-10330,9,5,660.972,Alex Grayson,1,3,5,135,Others,General promotions and newsletters.
+AG-10390,115,5,200.945,Allen Goldenen,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+AG-10495,79,8,2356.855,Andrew Gjertsen,3,2,3,323,Others,General promotions and newsletters.
+AG-10525,846,4,1455.038,Andy Gerbode,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+AG-10675,98,7,3489.0396000000005,Anna Gayman,3,2,2,322,Others,General promotions and newsletters.
+AG-10765,78,4,170.584,Anthony Garverick,3,4,5,345,Others,General promotions and newsletters.
+AG-10900,97,10,4510.797,Arthur Gainer,3,1,1,311,Others,General promotions and newsletters.
+AH-10030,13,7,1744.7,Aaron Hawkins,1,2,3,123,Others,General promotions and newsletters.
+AH-10075,35,10,3250.337,Adam Hart,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+AH-10120,61,7,1735.5140000000001,Adrian Hane,3,2,4,324,Others,General promotions and newsletters.
+AH-10195,56,4,1587.452,Alan Haines,3,4,4,344,Others,General promotions and newsletters.
+AH-10210,7,9,4805.344,Alan Hwang,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+AH-10465,231,5,2495.3915999999995,Amy Hunt,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+AH-10585,22,4,738.504,Angele Hood,1,4,5,145,At Risk,Send win-back offers or reminders.
+AH-10690,411,12,7888.294,Anna Häberlin,5,1,1,511,New Customers,Send welcome emails and first-time coupons.
+AI-10855,14,10,4375.786,Arianne Irving,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+AJ-10780,76,7,4867.344,Anthony Jacobs,3,2,1,321,Others,General promotions and newsletters.
+AJ-10795,167,7,4501.391,Anthony Johnson,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+AJ-10945,86,7,1839.24,Ashley Jarboe,3,2,3,323,Others,General promotions and newsletters.
+AJ-10960,75,3,629.2479999999999,Astrea Jones,3,5,5,355,Others,General promotions and newsletters.
+AM-10360,29,5,814.012,Alice McCarthy,2,3,5,235,Others,General promotions and newsletters.
+AM-10705,163,8,5664.022,Anne McFarland,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+AO-10810,502,1,161.28,Anthony O'Donnell,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+AP-10720,42,8,1638.554,Anne Pryor,2,2,4,224,Others,General promotions and newsletters.
+AP-10915,99,10,3323.556,Arthur Prichep,3,1,2,312,Others,General promotions and newsletters.
+AR-10345,112,4,1055.694,Alex Russell,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+AR-10405,126,5,2236.1279999999997,Allen Rosenblatt,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+AR-10510,15,5,264.86400000000003,Andrew Roberts,1,3,5,135,Others,General promotions and newsletters.
+AR-10540,7,6,6608.448,Andy Reiter,1,3,1,131,Others,General promotions and newsletters.
+AR-10570,535,1,88.15,Anemone Ratner,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+AR-10825,59,8,4523.336,Anthony Rawles,3,2,1,321,Others,General promotions and newsletters.
+AS-10045,89,7,3050.692,Aaron Smayling,3,2,2,322,Others,General promotions and newsletters.
+AS-10090,29,9,3255.31,Adam Shillingsburg,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+AS-10135,42,2,58.82,Adrian Shami,2,5,5,255,At Risk,Send win-back offers or reminders.
+AS-10225,23,5,4260.784,Alan Schoenberger,1,3,2,132,Others,General promotions and newsletters.
+AS-10240,193,7,584.6080000000001,Alan Shonely,4,2,5,425,New Customers,Send welcome emails and first-time coupons.
+AS-10285,20,6,3214.236,Alejandro Savely,1,3,2,132,Others,General promotions and newsletters.
+AS-10630,93,7,833.398,Ann Steele,3,2,5,325,Others,General promotions and newsletters.
+AT-10435,22,6,1171.814,Alyssa Tate,1,3,4,134,Others,General promotions and newsletters.
+AT-10735,14,10,3831.864,Annie Thurman,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+AW-10840,21,4,649.3760000000001,Anthony Witt,1,4,5,145,At Risk,Send win-back offers or reminders.
+AW-10930,47,7,2852.9680000000003,Arthur Wiediger,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+AY-10555,15,4,497.014,Andy Yotov,1,4,5,145,At Risk,Send win-back offers or reminders.
+AZ-10750,161,6,1622.018,Annie Zypern,4,3,4,434,Loyal Customers,Offer loyalty points or free gifts.
+BB-10990,106,5,744.34,Barry Blumstein,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+BB-11545,29,9,6765.728,Brenda Bowman,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+BC-11125,203,9,2933.6760000000004,Becky Castell,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+BD-11320,34,12,5718.521000000001,Bill Donatelli,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+BD-11500,36,6,4411.243,Bradley Drucker,2,3,1,231,Others,General promotions and newsletters.
+BD-11560,279,2,320.54,Brendan Dodson,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+BD-11605,98,7,3288.471,Brian Dahlen,3,2,2,322,Others,General promotions and newsletters.
+BD-11620,70,6,1538.1100000000001,Brian DeCherney,3,3,4,334,Others,General promotions and newsletters.
+BD-11635,10,3,582.6460000000001,Brian Derr,1,5,5,155,At Risk,Send win-back offers or reminders.
+BD-11725,94,6,1526.5,Bruce Degenhardt,3,3,4,334,Others,General promotions and newsletters.
+BD-11770,328,6,658.466,Bryan Davis,5,3,5,535,Loyal Customers,Offer loyalty points or free gifts.
+BE-11335,120,5,4204.676,Bill Eplett,4,4,2,442,Loyal Customers,Offer loyalty points or free gifts.
+BE-11410,99,5,2261.438,Bobby Elias,3,4,3,343,Others,General promotions and newsletters.
+BE-11455,255,6,1727.6520000000003,Brad Eason,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+BF-10975,92,7,599.798,Barbara Fisher,3,2,5,325,Others,General promotions and newsletters.
+BF-11005,40,4,1333.88,Barry Franz,2,4,4,244,At Risk,Send win-back offers or reminders.
+BF-11020,75,8,2888.5060000000003,Barry Französisch,3,2,2,322,Others,General promotions and newsletters.
+BF-11080,26,3,272.95,Bart Folk,1,5,5,155,At Risk,Send win-back offers or reminders.
+BF-11170,17,11,5907.972000000001,Ben Ferrer,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+BF-11215,66,4,1585.162,Benjamin Farhat,3,4,4,344,Others,General promotions and newsletters.
+BF-11275,58,3,791.9899999999999,Beth Fritzler,3,5,5,355,Others,General promotions and newsletters.
+BG-11035,29,8,2798.948,Barry Gonzalez,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+BG-11695,37,6,1874.1719999999998,Brooke Gillingham,2,3,3,233,Others,General promotions and newsletters.
+BG-11740,58,6,1006.356,Bruce Geld,3,3,4,334,Others,General promotions and newsletters.
+BH-11710,24,8,6255.351000000001,Brosina Hoffman,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+BK-11260,78,6,659.1379999999999,Berenike Kampe,3,3,5,335,Others,General promotions and newsletters.
+BM-11140,308,4,11789.63,Becky Martin,5,4,1,541,Loyal Customers,Offer loyalty points or free gifts.
+BM-11575,101,6,808.162,Brendan Murry,3,3,5,335,Others,General promotions and newsletters.
+BM-11650,34,11,7294.185,Brian Moss,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+BM-11785,219,10,1338.842,Bryan Mills,4,1,4,414,New Customers,Send welcome emails and first-time coupons.
+BN-11470,25,4,265.296,Brad Norvell,1,4,5,145,At Risk,Send win-back offers or reminders.
+BN-11515,10,5,1459.344,Bradley Nguyen,1,4,4,144,At Risk,Send win-back offers or reminders.
+BO-11350,138,5,2682.728,Bill Overfelt,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+BO-11425,76,2,130.83,Bobby Odegard,3,5,5,355,Others,General promotions and newsletters.
+BP-11050,84,5,983.42,Barry Pond,3,4,4,344,Others,General promotions and newsletters.
+BP-11095,18,12,2442.044,Bart Pistole,1,1,3,113,Others,General promotions and newsletters.
+BP-11155,90,6,1697.8609999999999,Becky Pak,3,3,4,334,Others,General promotions and newsletters.
+BP-11185,2,9,3675.861,Ben Peterman,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+BP-11230,40,5,1181.49,Benjamin Patterson,2,4,4,244,At Risk,Send win-back offers or reminders.
+BP-11290,13,7,2475.157,Beth Paige,1,2,3,123,Others,General promotions and newsletters.
+BS-11365,559,5,10501.653,Bill Shonely,5,4,1,541,Loyal Customers,Offer loyalty points or free gifts.
+BS-11380,29,5,3887.834,Bill Stewart,2,4,2,242,At Risk,Send win-back offers or reminders.
+BS-11590,36,6,2454.928,Brendan Sweed,2,3,3,233,Others,General promotions and newsletters.
+BS-11665,583,3,3288.1100000000006,Brian Stugart,5,5,2,552,Loyal Customers,Offer loyalty points or free gifts.
+BS-11755,2,7,2562.382,Bruce Stewart,1,2,3,123,Others,General promotions and newsletters.
+BS-11800,266,2,949.4300000000001,Bryan Spruell,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+BT-11305,337,5,2567.656,Beth Thompson,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+BT-11395,303,6,2186.6130000000003,Bill Tyler,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+BT-11440,561,4,603.876,Bobby Trafton,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+BT-11485,660,2,415.19599999999997,Brad Thomas,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+BT-11530,92,5,2684.492,Bradley Talbott,3,4,3,343,Others,General promotions and newsletters.
+BT-11680,21,7,3196.752,Brian Thompson,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+BV-11245,335,5,1523.2730000000001,Benjamin Venier,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+BW-11065,213,3,385.516,Barry Weirich,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+BW-11110,122,8,4750.358,Bart Watters,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+BW-11200,204,6,1738.406,Ben Wallace,4,3,4,434,Loyal Customers,Offer loyalty points or free gifts.
+CA-11965,97,6,3789.7228,Carol Adams,3,3,2,332,Others,General promotions and newsletters.
+CA-12055,402,5,1679.7240000000002,Cathy Armstrong,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+CA-12265,57,9,2648.2872,Christina Anderson,3,1,3,313,Others,General promotions and newsletters.
+CA-12310,14,4,1421.954,Christine Abelman,1,4,4,144,At Risk,Send win-back offers or reminders.
+CA-12775,121,7,3041.5660000000003,Cynthia Arntzen,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+CB-12025,48,10,6076.139,Cassandra Brandow,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+CB-12415,27,8,1949.2,Christy Brittain,1,2,3,123,Others,General promotions and newsletters.
+CB-12535,198,8,4246.4555,Claudia Bergmann,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+CC-12100,458,6,1770.9450000000002,Chad Cunningham,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+CC-12145,107,7,2471.65,Charles Crestani,4,2,3,423,New Customers,Send welcome emails and first-time coupons.
+CC-12220,21,12,3913.4179999999997,Chris Cortes,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+CC-12370,44,5,12129.072,Christopher Conant,2,4,1,241,At Risk,Send win-back offers or reminders.
+CC-12430,1,10,2870.05,Chuck Clark,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+CC-12475,40,9,1659.438,Cindy Chapman,2,1,4,214,Others,General promotions and newsletters.
+CC-12550,28,3,113.832,Clay Cheatham,2,5,5,255,At Risk,Send win-back offers or reminders.
+CC-12610,35,7,2540.631,Corey Catlett,2,2,3,223,Others,General promotions and newsletters.
+CC-12670,30,7,2269.7015,Craig Carreira,2,2,3,223,Others,General promotions and newsletters.
+CC-12685,800,4,2854.1150000000002,Craig Carroll,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+CD-11920,41,5,2033.968,Carlos Daly,2,4,3,243,At Risk,Send win-back offers or reminders.
+CD-11980,55,3,639.7660000000001,Carol Darley,3,5,5,355,Others,General promotions and newsletters.
+CD-12280,43,2,1205.584,Christina DeMoss,2,5,4,254,At Risk,Send win-back offers or reminders.
+CD-12790,400,5,1860.732,Cynthia Delaney,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+CG-12040,50,6,904.4680000000001,Catherine Glotzbach,2,3,5,235,Others,General promotions and newsletters.
+CG-12520,339,3,1148.78,Claire Gute,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+CH-12070,692,3,1537.236,Cathy Hwang,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+CJ-11875,366,1,16.520000000000003,Carl Jackson,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+CJ-12010,190,8,11164.974,Caroline Jumper,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+CK-12205,40,13,3154.855,Chloris Kastensmidt,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+CK-12325,121,5,2945.321,Christine Kargatis,4,4,2,442,Loyal Customers,Offer loyalty points or free gifts.
+CK-12595,44,11,2372.75,Clytie Kelty,2,1,3,213,Others,General promotions and newsletters.
+CK-12760,83,9,1582.1090000000002,Cyma Kinney,3,1,4,314,Others,General promotions and newsletters.
+CL-11890,107,4,1262.0140000000001,Carl Ludwig,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+CL-12565,285,12,10880.546,Clay Ludtke,5,1,1,511,New Customers,Send welcome emails and first-time coupons.
+CL-12700,106,5,2353.586,Craig Leslie,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+CM-11815,132,6,1673.8880000000001,Candace McMahon,4,3,4,434,Loyal Customers,Offer loyalty points or free gifts.
+CM-11935,709,2,565.392,Carlos Meador,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+CM-12115,9,4,1661.6100000000001,Chad McGuire,1,4,4,144,At Risk,Send win-back offers or reminders.
+CM-12160,27,6,2533.314,Charles McCrossin,1,3,3,133,Others,General promotions and newsletters.
+CM-12190,9,6,1475.144,Charlotte Melton,1,3,4,134,Others,General promotions and newsletters.
+CM-12235,386,5,2305.712,Chris McAfee,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+CM-12385,38,4,8954.019999999999,Christopher Martinez,2,4,1,241,At Risk,Send win-back offers or reminders.
+CM-12445,437,3,287.99,Chuck Magee,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+CM-12655,28,6,6339.5576,Corinna Mitchell,2,3,1,231,Others,General promotions and newsletters.
+CM-12715,1036,4,3984.4524,Craig Molinari,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+CP-12085,83,8,5402.253999999999,Cathy Prescott,3,2,1,321,Others,General promotions and newsletters.
+CP-12340,161,8,5888.275,Christine Phan,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+CR-12580,58,4,2148.8519999999994,Clay Rozendal,3,4,3,343,Others,General promotions and newsletters.
+CR-12625,471,3,475.9000000000001,Corey Roper,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+CR-12730,79,4,1600.55,Craig Reiter,3,4,4,344,Others,General promotions and newsletters.
+CR-12820,86,3,1397.8724,Cyra Reiten,3,5,4,354,Others,General promotions and newsletters.
+CS-11845,92,5,1278.954,Cari Sayre,3,4,4,344,Others,General promotions and newsletters.
+CS-11860,163,6,537.632,Cari Schnelling,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+CS-11950,26,11,3036.547,Carlos Soltero,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+CS-12130,490,4,884.6400000000001,Chad Sievert,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+CS-12175,233,5,844.4580000000001,Charles Sheldon,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+CS-12250,27,12,2754.216,Chris Selesnick,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+CS-12355,7,11,3202.162,Christine Sundaresam,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+CS-12400,3,9,3651.8585000000003,Christopher Schild,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+CS-12460,28,2,550.644,Chuck Sachs,2,5,5,255,At Risk,Send win-back offers or reminders.
+CS-12490,425,4,1077.2285000000002,Cindy Schnelling,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+CS-12505,59,6,5690.055,Cindy Stewart,3,3,1,331,Others,General promotions and newsletters.
+CT-11995,97,8,3241.898,Carol Triggs,3,2,2,322,Others,General promotions and newsletters.
+CV-12295,255,5,2830.6279999999997,Christina VanderZanden,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+CV-12805,6,9,2370.3136,Cynthia Voltz,1,1,3,113,Others,General promotions and newsletters.
+CW-11905,23,6,1136.592,Carl Weiss,1,3,4,134,Others,General promotions and newsletters.
+CY-12745,61,8,2900.0260000000003,Craig Yedwab,3,2,2,322,Others,General promotions and newsletters.
+Co-12640,550,5,1300.076,Corey-Lock,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+DA-13450,353,4,156.76,Dianna Arnett,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+DB-12910,22,8,2171.599,Daniel Byrd,1,2,3,123,Others,General promotions and newsletters.
+DB-12970,242,5,2839.2272,Darren Budd,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+DB-13060,17,7,4531.646000000001,Dave Brooks,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+DB-13120,49,7,2973.094,David Bremer,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+DB-13210,10,10,2332.5769999999998,Dean Braden,1,1,3,113,Others,General promotions and newsletters.
+DB-13270,54,8,4655.897,Deborah Brumfield,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+DB-13360,265,5,1081.466,Dennis Bolton,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+DB-13405,188,4,1711.692,Denny Blanton,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+DB-13555,108,7,3908.8028,Dorothy Badders,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+DB-13615,34,7,1989.05,Doug Bickford,2,2,3,223,Others,General promotions and newsletters.
+DB-13660,13,7,1155.202,Duane Benoit,1,2,4,124,Others,General promotions and newsletters.
+DC-12850,38,9,3336.1680000000006,Dan Campbell,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+DC-13285,24,5,1174.618,Debra Catini,1,4,4,144,At Risk,Send win-back offers or reminders.
+DD-13570,42,6,269.54200000000003,Dorothy Dickinson,2,3,5,235,Others,General promotions and newsletters.
+DE-13255,720,5,2550.874,Deanra Eno,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+DF-13135,701,3,2390.534,David Flashing,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+DG-13300,33,5,3195.818,Deirdre Greer,2,4,2,242,At Risk,Send win-back offers or reminders.
+DH-13075,278,6,4932.872,Dave Hallsten,5,3,1,531,Loyal Customers,Offer loyalty points or free gifts.
+DH-13675,777,4,1043.096,Duane Huffman,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+DJ-13420,638,4,2012.52,Denny Joy,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+DJ-13510,49,8,2501.688,Don Jones,2,2,3,223,Others,General promotions and newsletters.
+DJ-13630,13,3,3356.398,Doug Jacobs,1,5,2,152,At Risk,Send win-back offers or reminders.
+DK-12835,22,12,3256.48,Damala Kotsonis,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+DK-12895,46,5,4282.176,Dana Kaydos,2,4,2,242,At Risk,Send win-back offers or reminders.
+DK-12985,8,5,1687.04,Darren Koutras,1,4,4,144,At Risk,Send win-back offers or reminders.
+DK-13090,43,7,2650.557,Dave Kipp,2,2,3,223,Others,General promotions and newsletters.
+DK-13150,11,2,797.832,David Kendrick,1,5,5,155,At Risk,Send win-back offers or reminders.
+DK-13225,11,9,4802.394,Dean Katz,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+DK-13375,20,8,3318.486,Dennis Kane,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+DL-12865,101,8,1503.112,Dan Lawera,3,2,4,324,Others,General promotions and newsletters.
+DL-12925,58,6,3272.2,Daniel Lacy,3,3,2,332,Others,General promotions and newsletters.
+DL-13315,23,8,1458.258,Delfina Latchford,1,2,4,124,Others,General promotions and newsletters.
+DL-13330,58,4,585.02,Denise Leinenbach,3,4,5,345,Others,General promotions and newsletters.
+DL-13495,77,8,3539.322,Dionis Lloyd,3,2,2,322,Others,General promotions and newsletters.
+DM-12955,115,7,1322.034,Dario Medina,4,2,4,424,New Customers,Send welcome emails and first-time coupons.
+DM-13015,58,7,6345.103,Darrin Martin,3,2,1,321,Others,General promotions and newsletters.
+DM-13345,23,8,4074.4720000000007,Denise Monton,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+DM-13525,482,3,1376.792,Don Miller,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+DN-13690,218,7,2139.79,Duane Noonan,4,2,3,423,New Customers,Send welcome emails and first-time coupons.
+DO-13435,134,9,1300.0315,Denny Ordway,4,1,4,414,New Customers,Send welcome emails and first-time coupons.
+DO-13645,27,7,1267.316,Doug O'Connell,1,2,4,124,Others,General promotions and newsletters.
+DP-13000,127,9,1050.636,Darren Powers,4,1,4,414,New Customers,Send welcome emails and first-time coupons.
+DP-13105,7,8,2215.002,Dave Poirier,1,2,3,123,Others,General promotions and newsletters.
+DP-13165,813,2,1058.616,David Philippe,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+DP-13390,359,9,5480.724,Dennis Pardue,5,1,1,511,New Customers,Send welcome emails and first-time coupons.
+DR-12880,4,9,6528.034000000001,Dan Reichenbach,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+DR-12940,51,8,8350.868,Daniel Raglin,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+DS-13030,94,4,1762.213,Darrin Sayre,3,4,3,343,Others,General promotions and newsletters.
+DS-13180,24,9,2881.8128,David Smith,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+DV-13045,20,5,1119.4830000000002,Darrin Van Huff,1,4,4,144,At Risk,Send win-back offers or reminders.
+DV-13465,30,6,3341.5870000000004,Dianna Vittorini,2,3,2,232,Others,General promotions and newsletters.
+DW-13195,70,6,1080.751,David Wiener,3,3,4,334,Others,General promotions and newsletters.
+DW-13480,218,5,5271.628,Dianna Wilson,4,4,1,441,Loyal Customers,Offer loyalty points or free gifts.
+DW-13540,99,5,344.08000000000004,Don Weiss,3,4,5,345,Others,General promotions and newsletters.
+DW-13585,243,7,1204.854,Dorothy Wardle,5,2,4,524,New Customers,Send welcome emails and first-time coupons.
+Dl-13600,120,5,755.602,Dorris liebe,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+Dp-13240,85,11,7198.7609999999995,Dean percer,3,1,1,311,Others,General promotions and newsletters.
+EA-14035,153,13,2846.705,Erin Ashbrook,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+EB-13705,49,9,3644.978,Ed Braxton,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+EB-13750,36,10,3236.314,Edward Becker,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+EB-13840,91,5,4358.128,Ellis Ballard,3,4,1,341,Others,General promotions and newsletters.
+EB-13870,101,10,2767.219,Emily Burns,3,1,2,312,Others,General promotions and newsletters.
+EB-13930,162,5,944.5999999999999,Eric Barreto,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+EB-13975,1,4,1643.255,Erica Bern,1,4,4,144,At Risk,Send win-back offers or reminders.
+EB-14110,114,6,3071.126,Eugene Barchas,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+EB-14170,83,6,1186.326,Evan Bailliet,3,3,4,334,Others,General promotions and newsletters.
+EC-14050,54,5,461.914,Erin Creighton,3,4,5,345,Others,General promotions and newsletters.
+ED-13885,136,8,3484.92,Emily Ducich,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+EG-13900,23,5,1832.02,Emily Grady,1,4,3,143,At Risk,Send win-back offers or reminders.
+EH-13765,136,12,10310.880000000001,Edward Hooks,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+EH-13945,218,8,684.171,Eric Hoffmann,4,2,5,425,New Customers,Send welcome emails and first-time coupons.
+EH-13990,406,6,825.95,Erica Hackney,5,3,5,535,Loyal Customers,Offer loyalty points or free gifts.
+EH-14005,3,7,1219.53,Erica Hernandez,1,2,4,124,Others,General promotions and newsletters.
+EH-14125,153,10,3082.6530000000002,Eugene Hildebrand,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+EH-14185,106,6,923.884,Evan Henry,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+EJ-13720,303,4,2162.174,Ed Jacobs,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+EJ-14155,58,5,2656.6910000000003,Eva Jacobs,3,4,3,343,Others,General promotions and newsletters.
+EK-13795,45,4,1303.478,Eileen Kiefer,2,4,4,244,At Risk,Send win-back offers or reminders.
+EL-13735,78,2,124.28,Ed Ludwig,3,5,5,355,Others,General promotions and newsletters.
+EM-13810,133,5,2567.01,Eleni McCrary,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+EM-13825,56,8,2339.598,Elizabeth Moffitt,3,2,3,323,Others,General promotions and newsletters.
+EM-13960,152,5,933.7040000000001,Eric Murdock,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+EM-14065,48,4,228.99,Erin Mull,2,4,5,245,At Risk,Send win-back offers or reminders.
+EM-14095,114,4,1041.0420000000001,Eudokia Martin,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+EM-14140,49,6,4588.436,Eugene Moren,2,3,1,231,Others,General promotions and newsletters.
+EM-14200,159,3,366.822,Evan Minnotte,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+EN-13780,288,4,2199.366,Edward Nazzal,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+EP-13915,13,17,5478.0608,Emily Phan,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+ER-13855,422,3,1245.7880000000002,Elpida Rittenbach,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+ES-14020,41,5,3510.458,Erica Smith,2,4,2,242,At Risk,Send win-back offers or reminders.
+ES-14080,29,9,4657.924,Erin Smith,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+FA-14230,98,7,2984.054,Frank Atkinson,3,2,2,322,Others,General promotions and newsletters.
+FC-14245,71,7,3418.742,Frank Carlisle,3,2,2,322,Others,General promotions and newsletters.
+FC-14335,185,7,3889.366,Fred Chung,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+FG-14260,35,7,1383.144,Frank Gastineau,2,2,4,224,Others,General promotions and newsletters.
+FH-14275,38,10,4256.272,Frank Hawley,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+FH-14350,213,4,2271.284,Fred Harton,4,5,3,453,Loyal Customers,Offer loyalty points or free gifts.
+FH-14365,6,8,6987.196000000001,Fred Hopkins,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+FM-14215,8,10,2456.638,Filia McAdams,1,1,3,113,Others,General promotions and newsletters.
+FM-14290,37,9,3736.1979999999994,Frank Merwin,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+FM-14380,146,9,2523.266,Fred McMath,4,1,3,413,New Customers,Send welcome emails and first-time coupons.
+FO-14305,39,10,2678.438,Frank Olsen,2,1,3,213,Others,General promotions and newsletters.
+FP-14320,24,8,4046.746,Frank Preis,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+FW-14395,363,3,79.75,Fred Wasserman,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+GA-14515,150,8,3919.7760000000003,George Ashbrook,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+GA-14725,6,11,1398.382,Guy Armstrong,1,1,4,114,Others,General promotions and newsletters.
+GB-14530,63,11,1568.44,George Bell,3,1,4,314,Others,General promotions and newsletters.
+GB-14575,14,5,4716.288,Giulietta Baptist,1,4,1,141,At Risk,Send win-back offers or reminders.
+GD-14590,6,4,1888.07,Giulietta Dortch,1,5,3,153,At Risk,Send win-back offers or reminders.
+GG-14650,44,9,2224.0,Greg Guthrie,2,1,3,213,Others,General promotions and newsletters.
+GH-14410,76,9,2819.467,Gary Hansen,3,1,2,312,Others,General promotions and newsletters.
+GH-14425,51,4,4172.8460000000005,Gary Hwang,2,5,2,252,At Risk,Send win-back offers or reminders.
+GH-14485,388,2,1361.2440000000004,Gene Hale,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+GH-14665,3,2,146.9408,Greg Hansen,1,5,5,155,At Risk,Send win-back offers or reminders.
+GK-14620,113,9,6497.27,Grace Kelly,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+GM-14440,84,7,3582.8199999999997,Gary McGarr,3,2,2,322,Others,General promotions and newsletters.
+GM-14455,17,6,3078.6240000000003,Gary Mitchum,1,3,2,132,Others,General promotions and newsletters.
+GM-14500,107,10,1255.682,Gene McClure,4,1,4,414,New Customers,Send welcome emails and first-time coupons.
+GM-14680,153,6,3163.628,Greg Matthias,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+GM-14695,118,3,6049.965999999999,Greg Maxwell,4,5,1,451,Loyal Customers,Offer loyalty points or free gifts.
+GP-14740,766,2,236.53000000000003,Guy Phonely,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+GR-14560,1136,2,1284.38,Georgia Rosenberg,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+GT-14635,57,3,9351.212,Grant Thornton,3,5,1,351,Others,General promotions and newsletters.
+GT-14710,37,11,11820.12,Greg Tran,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+GT-14755,35,4,226.436,Guy Thornton,2,5,5,255,At Risk,Send win-back offers or reminders.
+GW-14605,29,7,2189.0190000000002,Giulietta Weimer,2,2,3,223,Others,General promotions and newsletters.
+GZ-14470,8,9,4355.150000000001,Gary Zandusky,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+GZ-14545,158,4,2454.6220000000003,George Zrebassa,4,5,3,453,Loyal Customers,Offer loyalty points or free gifts.
+HA-14905,70,7,2163.3,Helen Abelman,3,2,3,323,Others,General promotions and newsletters.
+HA-14920,21,8,2584.158,Helen Andreada,1,2,3,123,Others,General promotions and newsletters.
+HD-14785,770,3,251.35999999999999,Harold Dahlen,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+HE-14800,13,4,883.532,Harold Engle,1,5,5,155,At Risk,Send win-back offers or reminders.
+HF-14995,22,7,2533.164,Herbert Flentye,1,2,3,123,Others,General promotions and newsletters.
+HG-14845,55,5,785.628,Harry Greene,3,4,5,345,Others,General promotions and newsletters.
+HG-14965,24,12,3247.6420000000003,Henry Goldwyn,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+HG-15025,7,7,3690.284,Hunter Glantz,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+HH-15010,73,2,218.668,Hilary Holden,3,5,5,355,Others,General promotions and newsletters.
+HJ-14875,127,5,358.1,Heather Jas,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+HK-14890,152,8,4877.784,Heather Kirkland,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+HL-15040,44,6,12873.297999999999,Hunter Lopez,2,3,1,231,Others,General promotions and newsletters.
+HM-14860,3,10,8236.7648,Harry Marie,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+HM-14980,248,4,736.276,Henry MacAllister,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+HP-14815,31,7,1990.314,Harold Pawlan,2,2,3,223,Others,General promotions and newsletters.
+HR-14770,14,5,1299.288,Hallie Redmond,1,4,4,144,At Risk,Send win-back offers or reminders.
+HR-14830,160,7,5248.787,Harold Ryan,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+HW-14935,118,8,9300.254,Helen Wasserman,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+HZ-14950,36,5,886.52,Henia Zydlo,2,4,5,245,At Risk,Send win-back offers or reminders.
+IG-15085,72,4,744.5740000000001,Ivan Gibson,3,5,5,355,Others,General promotions and newsletters.
+IL-15100,143,7,5040.736,Ivan Liston,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+IM-15055,410,3,2872.6300000000006,Ionia McGrath,5,5,2,552,Loyal Customers,Offer loyalty points or free gifts.
+IM-15070,391,7,4930.474,Irene Maddox,5,2,1,521,New Customers,Send welcome emails and first-time coupons.
+JA-15970,93,8,6491.026000000001,Joseph Airdo,3,2,1,321,Others,General promotions and newsletters.
+JB-15400,8,10,1791.605,Jennifer Braxton,1,1,3,113,Others,General promotions and newsletters.
+JB-15925,738,3,900.5520000000001,Joni Blumstein,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+JB-16000,44,7,644.1188,Joy Bell-,2,2,5,225,Others,General promotions and newsletters.
+JB-16045,8,5,2518.115,Julia Barnett,1,4,3,143,At Risk,Send win-back offers or reminders.
+JC-15340,115,4,71.263,Jasper Cacioppo,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+JC-15385,176,1,1058.1080000000002,Jenna Caffey,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+JC-15775,159,9,2772.0550000000003,John Castell,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+JC-16105,58,5,858.576,Julie Creighton,3,4,5,345,Others,General promotions and newsletters.
+JD-15790,118,5,2152.352,John Dryer,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+JD-15895,395,11,7610.8640000000005,Jonathan Doherty,5,1,1,511,New Customers,Send welcome emails and first-time coupons.
+JD-16015,113,6,385.43000000000006,Joy Daniels,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+JD-16060,301,3,695.442,Julia Dunbar,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+JD-16150,42,8,8828.0305,Justin Deggeller,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+JE-15475,194,6,1388.682,Jeremy Ellison,4,3,4,434,Loyal Customers,Offer loyalty points or free gifts.
+JE-15610,49,7,7754.976,Jim Epp,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+JE-15715,47,10,8697.843,Joe Elijah,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+JE-15745,52,13,6760.8150000000005,Joel Eaton,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+JE-16165,21,3,2697.248,Justin Ellison,1,5,3,153,At Risk,Send win-back offers or reminders.
+JF-15190,66,7,2279.5860000000002,Jamie Frazer,3,2,3,323,Others,General promotions and newsletters.
+JF-15295,226,5,955.124,Jason Fortune-,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+JF-15355,106,6,1911.844,Jay Fein,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+JF-15415,3,6,2371.448,Jennifer Ferguson,1,3,3,133,Others,General promotions and newsletters.
+JF-15490,122,11,1082.9180000000001,Jeremy Farry,4,1,4,414,New Customers,Send welcome emails and first-time coupons.
+JF-15565,55,8,4198.332,Jill Fjeld,3,2,2,322,Others,General promotions and newsletters.
+JG-15115,759,3,2358.676,Jack Garza,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+JG-15160,2,11,6366.392,James Galang,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+JG-15310,3,6,2240.58,Jason Gross,1,3,3,133,Others,General promotions and newsletters.
+JG-15805,224,6,1507.018,John Grady,4,3,4,434,Loyal Customers,Offer loyalty points or free gifts.
+JH-15430,6,4,309.281,Jennifer Halladay,1,5,5,155,At Risk,Send win-back offers or reminders.
+JH-15820,175,6,528.91,John Huston,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+JH-15910,42,7,959.477,Jonathan Howell,2,2,5,225,Others,General promotions and newsletters.
+JH-15985,30,6,7954.9980000000005,Joseph Holt,2,3,1,231,Others,General promotions and newsletters.
+JH-16180,405,4,2256.3940000000002,Justin Hirsh,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+JJ-15445,484,5,709.178,Jennifer Jackson,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+JJ-15760,754,2,195.0,Joel Jenkins,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+JK-15205,62,5,4427.142,Jamie Kunitz,3,4,1,341,Others,General promotions and newsletters.
+JK-15325,288,3,383.812,Jason Klamczynski,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+JK-15370,45,8,2709.632,Jay Kimmel,2,2,3,223,Others,General promotions and newsletters.
+JK-15625,62,7,3760.028,Jim Karlsson,3,2,2,322,Others,General promotions and newsletters.
+JK-15640,181,9,4760.434,Jim Kriz,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+JK-15730,85,10,4867.2,Joe Kamberova,3,1,1,311,Others,General promotions and newsletters.
+JK-16090,29,3,3747.668,Juliana Krohn,2,5,2,252,At Risk,Send win-back offers or reminders.
+JK-16120,118,10,2932.484,Julie Kriz,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+JL-15130,9,6,1214.956,Jack Lebron,1,3,4,134,Others,General promotions and newsletters.
+JL-15175,7,5,1571.5230000000001,James Lanier,1,4,4,144,At Risk,Send win-back offers or reminders.
+JL-15235,120,5,2203.7,Janet Lee,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+JL-15505,50,6,3173.874,Jeremy Lonsdale,2,3,2,232,Others,General promotions and newsletters.
+JL-15835,22,11,9799.923,John Lee,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+JL-15850,615,6,2725.256,John Lucas,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+JM-15250,38,6,3159.1220000000003,Janet Martin,2,3,2,232,Others,General promotions and newsletters.
+JM-15265,38,5,1804.146,Janet Molinari,2,4,3,243,At Risk,Send win-back offers or reminders.
+JM-15535,103,7,1733.4430000000002,Jessica Myrick,3,2,4,324,Others,General promotions and newsletters.
+JM-15580,1,5,303.94800000000004,Jill Matthias,1,4,5,145,At Risk,Send win-back offers or reminders.
+JM-15655,9,5,864.947,Jim Mitchum,1,4,5,145,At Risk,Send win-back offers or reminders.
+JM-15865,110,7,7625.076000000001,John Murray,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+JM-16195,58,10,2833.926,Justin MacKendrick,3,1,2,312,Others,General promotions and newsletters.
+JO-15145,58,9,3254.949,Jack O'Briant,3,1,2,312,Others,General promotions and newsletters.
+JO-15280,93,6,1934.272,Jas O'Carroll,3,3,3,333,Others,General promotions and newsletters.
+JO-15550,216,5,1090.8380000000002,Jesus Ocampo,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+JP-15460,38,7,1669.135,Jennifer Patt,2,2,4,224,Others,General promotions and newsletters.
+JP-15520,9,7,3635.594,Jeremy Pistek,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+JP-16135,103,9,1707.71,Julie Prescott,3,1,4,314,Others,General promotions and newsletters.
+JR-15670,594,2,1156.6580000000001,Jim Radford,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+JR-15700,69,1,863.8799999999999,Jocasta Rupert,3,5,5,355,Others,General promotions and newsletters.
+JR-16210,34,5,2201.686,Justin Ritter,2,4,3,243,At Risk,Send win-back offers or reminders.
+JS-15595,120,4,1417.654,Jill Stevenson,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+JS-15685,43,4,1131.064,Jim Sink,2,5,4,254,At Risk,Send win-back offers or reminders.
+JS-15880,535,5,3868.02,John Stevenson,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+JS-15940,464,5,469.16900000000004,Joni Sundaresam,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+JS-16030,29,6,2516.494,Joy Smith,2,3,3,233,Others,General promotions and newsletters.
+JW-15220,43,6,7721.714,Jane Waco,2,3,1,231,Others,General promotions and newsletters.
+JW-15955,6,7,1244.086,Joni Wasserman,1,2,4,124,Others,General promotions and newsletters.
+JW-16075,462,4,1428.731,Julia West,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+KA-16525,37,7,1519.506,Kelly Andreada,2,2,4,224,Others,General promotions and newsletters.
+KB-16240,5,7,3152.6150000000002,Karen Bern,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+KB-16315,297,9,1569.4640000000002,Karl Braun,5,1,4,514,New Customers,Send welcome emails and first-time coupons.
+KB-16405,118,3,908.821,Katrina Bavinger,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+KB-16585,231,12,2744.742,Ken Black,5,1,3,513,New Customers,Send welcome emails and first-time coupons.
+KB-16600,2,7,983.9219999999999,Ken Brennan,1,2,4,124,Others,General promotions and newsletters.
+KC-16255,408,6,2120.954,Karen Carlisle,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+KC-16540,98,4,3908.262,Kelly Collister,3,5,2,352,Others,General promotions and newsletters.
+KC-16675,58,4,1146.05,Kimberly Carter,3,5,4,354,Others,General promotions and newsletters.
+KD-16270,485,5,8282.358,Karen Daniels,5,4,1,541,Loyal Customers,Offer loyalty points or free gifts.
+KD-16345,42,6,1888.964,Katherine Ducich,2,3,3,233,Others,General promotions and newsletters.
+KD-16495,113,12,8181.256,Keith Dawkins,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+KD-16615,290,5,2243.51,Ken Dana,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+KE-16420,27,8,1686.7312,Katrina Edelman,1,2,4,124,Others,General promotions and newsletters.
+KF-16285,98,7,10604.266000000001,Karen Ferguson,3,2,1,321,Others,General promotions and newsletters.
+KH-16330,41,8,3312.864,Katharine Harms,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+KH-16360,2,6,3100.612,Katherine Hughes,1,3,2,132,Others,General promotions and newsletters.
+KH-16510,23,7,5952.859,Keith Herrera,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+KH-16630,59,9,3918.9660000000003,Ken Heidel,3,1,2,312,Others,General promotions and newsletters.
+KH-16690,3,7,5990.799000000001,Kristen Hastings,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+KL-16555,17,8,5016.488,Kelly Lampkin,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+KL-16645,48,12,14175.229000000001,Ken Lonsdale,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+KM-16225,15,6,2260.958,Kalyca Meade,1,3,3,133,Others,General promotions and newsletters.
+KM-16375,57,8,5620.186,Katherine Murray,3,2,1,321,Others,General promotions and newsletters.
+KM-16660,16,5,453.538,Khloe Miller,1,4,5,145,At Risk,Send win-back offers or reminders.
+KM-16720,29,8,4909.472000000001,Kunst Miller,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+KN-16390,20,9,2617.272,Katherine Nockton,1,1,3,113,Others,General promotions and newsletters.
+KN-16450,53,5,2171.962,Kean Nguyen,2,4,3,243,At Risk,Send win-back offers or reminders.
+KN-16705,99,8,2280.58,Kristina Nunn,3,2,3,323,Others,General promotions and newsletters.
+KS-16300,296,3,88.47200000000001,Karen Seio,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+KT-16465,392,7,3057.0999999999995,Kean Takahito,5,2,2,522,New Customers,Send welcome emails and first-time coupons.
+KT-16480,101,10,4642.0884,Kean Thornton,3,1,1,311,Others,General promotions and newsletters.
+KW-16435,97,5,4416.5199999999995,Katrina Willman,3,4,1,341,Others,General promotions and newsletters.
+KW-16570,772,4,449.096,Kelly Williams,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+LA-16780,155,11,8673.222,Laura Armstrong,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+LB-16735,49,3,50.188,Larry Blacks,2,5,5,255,At Risk,Send win-back offers or reminders.
+LB-16795,153,8,4985.676,Laurel Beltran,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+LC-16870,28,8,2580.7039999999997,Lena Cacioppo,2,2,3,223,Others,General promotions and newsletters.
+LC-16885,17,12,7663.126,Lena Creighton,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+LC-16930,42,8,4492.946,Linda Cazamias,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+LC-16960,437,4,3246.626,Lindsay Castell,5,5,2,552,Loyal Customers,Offer loyalty points or free gifts.
+LC-17050,55,5,2095.064,Liz Carlisle,3,4,3,343,Others,General promotions and newsletters.
+LC-17140,14,9,2633.582,Logan Currie,1,1,3,113,Others,General promotions and newsletters.
+LD-16855,553,1,5.304,Lela Donovan,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+LD-17005,415,4,1961.934,Lisa DeCherney,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+LE-16810,22,6,1469.45,Laurel Elliston,1,3,4,134,Others,General promotions and newsletters.
+LF-17185,23,7,3930.508999999999,Luke Foster,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+LH-16750,152,3,287.426,Larry Hughes,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+LH-16900,22,9,2295.332,Lena Hernandez,1,1,3,113,Others,General promotions and newsletters.
+LH-17020,240,4,318.239,Lisa Hazard,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+LH-17155,386,9,1739.689,Logan Haushalter,5,1,3,513,New Customers,Send welcome emails and first-time coupons.
+LL-16840,250,6,2741.2039999999997,Lauren Leatherbury,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+LM-17065,392,5,1346.7740000000001,Liz MacKendrick,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+LO-17170,3,5,644.35,Lori Olson,1,4,5,145,At Risk,Send win-back offers or reminders.
+LP-17080,41,4,756.6059999999999,Liz Pelletier,2,5,5,255,At Risk,Send win-back offers or reminders.
+LP-17095,10,7,3653.399,Liz Preis,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+LR-16915,27,6,5142.892,Lena Radford,2,3,1,231,Others,General promotions and newsletters.
+LR-17035,133,5,1879.306,Lisa Ryan,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+LS-16945,179,6,2845.2700000000004,Linda Southworth,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+LS-16975,21,9,2988.674,Lindsay Shagiari,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+LS-17200,97,6,1010.2560000000001,Luke Schmidt,3,3,4,334,Others,General promotions and newsletters.
+LS-17230,778,3,368.88000000000005,Lycoris Saunders,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+LS-17245,35,6,1008.1360000000001,Lynn Smith,2,3,4,234,Others,General promotions and newsletters.
+LT-16765,27,3,329.876,Larry Tron,2,5,5,255,At Risk,Send win-back offers or reminders.
+LT-17110,35,8,2936.252,Liz Thompson,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+LW-16825,89,5,2238.061,Laurel Workman,3,4,3,343,Others,General promotions and newsletters.
+LW-16990,34,6,3230.308,Lindsay Williams,2,3,2,232,Others,General promotions and newsletters.
+LW-17125,206,3,1259.04,Liz Willingham,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+LW-17215,22,7,5420.514,Luke Weiss,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+MA-17560,65,11,4299.161,Matt Abelman,3,1,1,311,Others,General promotions and newsletters.
+MA-17995,187,6,2453.284,Michelle Arnett,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+MB-17305,49,10,1548.702,Maria Bertelson,2,1,4,214,Others,General promotions and newsletters.
+MB-18085,45,7,1428.2310000000002,Mick Brown,2,2,4,224,Others,General promotions and newsletters.
+MC-17275,77,8,2725.982,Marc Crier,3,2,3,323,Others,General promotions and newsletters.
+MC-17425,400,5,4432.138,Mark Cousins,5,4,1,541,Loyal Customers,Offer loyalty points or free gifts.
+MC-17575,28,8,1303.893,Matt Collins,2,2,4,224,Others,General promotions and newsletters.
+MC-17590,52,6,2426.0669999999996,Matt Collister,2,3,3,233,Others,General promotions and newsletters.
+MC-17605,113,8,2258.192,Matt Connell,4,2,3,423,New Customers,Send welcome emails and first-time coupons.
+MC-17635,190,4,795.154,Matthew Clasen,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+MC-17845,2,7,3805.714,Michael Chen,1,2,2,122,Lost,Try re-engagement campaigns or surveys.
+MC-18100,42,10,2218.98,Mick Crebagga,2,1,3,213,Others,General promotions and newsletters.
+MC-18130,370,5,1581.9979999999998,Mike Caudle,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+MD-17350,118,7,3766.382,Maribeth Dona,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+MD-17860,37,5,1204.91,Michael Dominguez,2,4,4,244,At Risk,Send win-back offers or reminders.
+ME-17320,43,10,10663.728000000001,Maria Etezadi,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+ME-17725,29,8,1908.4532,Max Engle,2,2,3,223,Others,General promotions and newsletters.
+ME-18010,93,4,1256.9440000000002,Michelle Ellison,3,5,4,354,Others,General promotions and newsletters.
+MF-17665,422,5,937.0390000000002,Maureen Fritzler,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+MF-18250,8,5,1758.3,Monica Federle,1,4,3,143,At Risk,Send win-back offers or reminders.
+MG-17650,30,7,3785.276,Matthew Grinstein,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+MG-17680,93,4,2350.188,Maureen Gastineau,3,5,3,353,Others,General promotions and newsletters.
+MG-17695,556,3,1342.2820000000002,Maureen Gnade,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+MG-17875,117,5,1242.833,Michael Grace,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+MG-17890,100,9,776.384,Michael Granlund,3,1,5,315,Others,General promotions and newsletters.
+MG-18145,85,4,3061.543,Mike Gockenbach,3,5,2,352,Others,General promotions and newsletters.
+MG-18205,265,1,16.739000000000004,Mitch Gastineau,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+MH-17290,120,6,2394.025,Marc Harrigan,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+MH-17440,377,4,400.016,Mark Haberlin,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+MH-17455,86,8,2456.1820000000002,Mark Hamilton,3,2,3,323,Others,General promotions and newsletters.
+MH-17620,156,4,1252.8,Matt Hagelstein,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+MH-17785,99,7,2203.7780000000002,Maya Herman,3,2,3,323,Others,General promotions and newsletters.
+MH-18025,50,5,2984.948,Michelle Huthwaite,2,4,2,242,At Risk,Send win-back offers or reminders.
+MH-18115,6,9,5503.093,Mick Hernandez,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+MJ-17740,23,7,6320.746,Max Jones,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+MK-17905,29,8,2302.368,Michael Kennedy,2,2,3,223,Others,General promotions and newsletters.
+MK-18160,241,4,1031.602,Mike Kennedy,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+ML-17395,70,9,2722.843,Marina Lichtenstein,3,1,3,313,Others,General promotions and newsletters.
+ML-17410,55,6,2921.5,Maris LaWare,3,3,2,332,Others,General promotions and newsletters.
+ML-17755,30,7,2071.9139999999998,Max Ludwig,2,2,3,223,Others,General promotions and newsletters.
+ML-18040,80,3,742.082,Michelle Lonsdale,3,5,5,355,Others,General promotions and newsletters.
+ML-18265,101,2,162.232,Muhammed Lee,3,5,5,355,Others,General promotions and newsletters.
+MM-17260,169,4,1314.0230000000001,Magdelene Morse,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+MM-17920,8,11,3794.0800000000004,Michael Moore,1,1,2,112,Lost,Try re-engagement campaigns or surveys.
+MM-18055,62,8,2749.881,Michelle Moray,3,2,3,323,Others,General promotions and newsletters.
+MM-18280,86,9,775.414,Muhammed MacIntyre,3,1,5,315,Others,General promotions and newsletters.
+MN-17935,35,6,2477.9460000000004,Michael Nguyen,2,3,3,233,Others,General promotions and newsletters.
+MO-17500,73,4,922.4870000000001,Mary O'Rourke,3,5,5,355,Others,General promotions and newsletters.
+MO-17800,105,8,1687.027,Meg O'Connel,4,2,4,424,New Customers,Send welcome emails and first-time coupons.
+MO-17950,181,2,154.288,Michael Oakman,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+MP-17470,720,7,3206.132,Mark Packer,5,2,2,522,New Customers,Send welcome emails and first-time coupons.
+MP-17965,73,9,3983.6420000000003,Michael Paige,3,1,2,312,Others,General promotions and newsletters.
+MP-18175,17,9,5087.92,Mike Pelletier,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+MR-17545,126,4,639.178,Mathew Reese,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+MS-17365,274,10,7443.6900000000005,Maribeth Schnelling,5,1,1,511,New Customers,Send welcome emails and first-time coupons.
+MS-17530,435,4,475.65599999999995,MaryBeth Skach,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+MS-17710,414,6,1613.402,Maurice Satty,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+MS-17770,122,9,3144.678,Maxwell Schwartz,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+MS-17830,453,4,370.348,Melanie Seite,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+MS-17980,27,6,855.116,Michael Stewart,2,3,5,235,Others,General promotions and newsletters.
+MT-17815,50,6,2890.139,Meg Tillman,2,3,2,232,Others,General promotions and newsletters.
+MT-18070,204,4,1319.4497999999999,Michelle Tran,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+MV-17485,28,9,1560.0500000000002,Mark Van Huff,2,1,4,214,Others,General promotions and newsletters.
+MV-18190,20,7,1734.574,Mike Vittorini,1,2,4,124,Others,General promotions and newsletters.
+MW-18220,18,7,5341.900000000001,Mitch Webber,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+MW-18235,45,2,5253.876,Mitch Willingham,2,5,1,251,At Risk,Send win-back offers or reminders.
+MY-17380,30,7,2254.2850000000003,Maribeth Yedwab,2,3,3,233,Others,General promotions and newsletters.
+MY-18295,72,11,4152.696,Muhammed Yedwab,3,1,2,312,Others,General promotions and newsletters.
+MZ-17335,31,4,593.606,Maria Zettner,2,5,5,255,At Risk,Send win-back offers or reminders.
+MZ-17515,283,6,2564.906,Mary Zewe,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+NB-18580,1166,2,273.87199999999996,Nicole Brennan,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+NB-18655,20,9,1972.599,Nona Balk,1,1,3,113,Others,General promotions and newsletters.
+NC-18340,225,5,2461.404,Nat Carroll,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+NC-18415,42,6,2218.99,Nathan Cano,2,3,3,233,Others,General promotions and newsletters.
+NC-18535,7,7,8241.739,Nick Crebassa,1,3,1,131,Others,General promotions and newsletters.
+NC-18625,205,5,1821.7420000000002,Noah Childs,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+ND-18370,28,9,4326.139,Natalie DeCherney,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+ND-18460,184,6,2893.4550000000004,Neil Ducich,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+NF-18385,80,7,8322.826,Natalie Fritzler,3,3,1,331,Others,General promotions and newsletters.
+NF-18475,526,4,377.16200000000003,Neil Französisch,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+NF-18595,115,7,2031.472,Nicole Fjeld,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+NG-18355,49,5,1869.58,Nat Gilpin,2,4,3,243,At Risk,Send win-back offers or reminders.
+NG-18430,49,5,1395.9379999999999,Nathan Gelder,2,4,4,244,At Risk,Send win-back offers or reminders.
+NH-18610,190,7,2673.29,Nicole Hansen,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+NK-18490,71,7,572.048,Neil Knudson,3,3,5,335,Others,General promotions and newsletters.
+NL-18310,59,4,1418.0900000000001,Nancy Lomonaco,3,5,4,354,Others,General promotions and newsletters.
+NM-18445,161,7,6459.344,Nathan Mautz,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+NM-18520,245,10,2161.979,Neoma Murray,5,1,3,513,New Customers,Send welcome emails and first-time coupons.
+NP-18325,26,6,5529.62,Naresj Patel,1,3,1,131,Others,General promotions and newsletters.
+NP-18670,59,5,3908.402,Nora Paige,3,4,2,342,Others,General promotions and newsletters.
+NP-18685,407,6,1228.698,Nora Pelletier,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+NP-18700,139,7,7903.1825,Nora Preis,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+NR-18550,211,5,2367.277,Nick Radford,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+NS-18505,7,4,2575.863,Neola Schneider,1,5,3,153,At Risk,Send win-back offers or reminders.
+NS-18640,175,13,2964.823,Noel Staavos,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+NW-18400,173,7,7234.014,Natalie Webber,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+NZ-18565,86,9,2488.31,Nick Zandusky,3,1,3,313,Others,General promotions and newsletters.
+ON-18715,411,9,1567.52,Odella Nelson,5,1,4,514,New Customers,Send welcome emails and first-time coupons.
+OT-18730,66,5,3818.624,Olvera Toch,3,4,2,342,Others,General promotions and newsletters.
+PA-19060,104,6,729.408,Pete Armstrong,3,3,5,335,Others,General promotions and newsletters.
+PB-18805,26,3,740.356,Patrick Bzostek,1,5,5,155,At Risk,Send win-back offers or reminders.
+PB-19105,58,4,688.3240000000001,Peter Bühler,3,5,5,355,Others,General promotions and newsletters.
+PB-19150,98,8,1456.95,Philip Brown,3,2,4,324,Others,General promotions and newsletters.
+PB-19210,689,2,132.738,Phillip Breyer,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+PC-18745,3,4,1832.064,Pamela Coakley,1,5,3,153,At Risk,Send win-back offers or reminders.
+PC-19000,883,2,1061.488,Pauline Chand,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+PF-19120,836,4,9062.864000000001,Peter Fuller,5,5,1,551,Loyal Customers,Offer loyalty points or free gifts.
+PF-19165,197,6,2770.0,Philip Fox,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+PF-19225,115,5,2206.128,Phillip Flathmann,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+PG-18820,37,13,3086.907,Patrick Gardner,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+PG-18895,58,9,1987.164,Paul Gonzalez,3,1,3,313,Others,General promotions and newsletters.
+PH-18790,71,1,729.6480000000001,Patricia Hirasaki,3,5,5,355,Others,General promotions and newsletters.
+PJ-18835,40,8,1220.0900000000001,Patrick Jones,2,2,4,224,Others,General promotions and newsletters.
+PJ-19015,135,7,1824.2340000000002,Pauline Johnson,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+PK-18910,484,2,1441.1520000000005,Paul Knutson,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+PK-19075,10,12,8646.934000000001,Pete Kriz,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+PL-18925,16,5,239.48100000000005,Paul Lucas,1,4,5,145,At Risk,Send win-back offers or reminders.
+PM-18940,387,3,1405.402,Paul MacIntyre,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+PM-19135,52,4,4115.662,Peter McVee,2,5,2,252,At Risk,Send win-back offers or reminders.
+PN-18775,31,8,1467.152,Parhena Norris,2,2,4,224,Others,General promotions and newsletters.
+PO-18850,5,11,7473.828200000001,Patrick O'Brill,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+PO-18865,1,7,2493.214,Patrick O'Donnell,1,3,3,133,Others,General promotions and newsletters.
+PO-19180,161,9,4893.043,Philisse Overcash,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+PO-19195,87,5,1056.858,Phillina Ober,3,4,4,344,Others,General promotions and newsletters.
+PP-18955,98,10,7252.608,Paul Prost,3,1,1,311,Others,General promotions and newsletters.
+PR-18880,37,5,1840.178,Patrick Ryan,2,4,3,243,At Risk,Send win-back offers or reminders.
+PS-18760,108,6,2181.4790000000003,Pamela Stobb,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+PS-18970,70,8,1278.639,Paul Stevenson,3,2,4,324,Others,General promotions and newsletters.
+PS-19045,237,7,6843.634,Penelope Sewall,5,3,1,531,Loyal Customers,Offer loyalty points or free gifts.
+PT-19090,72,4,160.572,Pete Takahito,3,5,5,355,Others,General promotions and newsletters.
+PV-18985,90,5,2876.046,Paul Van Hugh,3,4,2,342,Others,General promotions and newsletters.
+PW-19030,47,10,3454.916,Pauline Webber,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+PW-19240,465,7,3922.4150000000004,Pierre Wener,5,3,2,532,Loyal Customers,Offer loyalty points or free gifts.
+QJ-19255,26,9,6108.338,Quincy Jones,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+RA-19285,6,9,2617.906,Ralph Arnett,1,1,3,113,Others,General promotions and newsletters.
+RA-19885,44,7,3832.3140000000003,Ruben Ausman,2,3,2,232,Others,General promotions and newsletters.
+RA-19915,13,9,4793.543,Russell Applegate,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+RA-19945,62,5,1686.9225000000001,Ryan Akin,3,4,4,344,Others,General promotions and newsletters.
+RB-19330,69,2,1008.1959999999999,Randy Bradley,3,5,4,354,Others,General promotions and newsletters.
+RB-19360,97,6,15117.339,Raymond Buch,3,3,1,331,Others,General promotions and newsletters.
+RB-19435,20,8,2663.0860000000002,Richard Bierner,1,2,3,123,Others,General promotions and newsletters.
+RB-19465,10,12,4715.466,Rick Bensley,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+RB-19570,26,5,528.546,Rob Beeghly,1,4,5,145,At Risk,Send win-back offers or reminders.
+RB-19645,649,5,221.084,Robert Barroso,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+RB-19705,55,4,2067.45,Roger Barcio,3,5,3,353,Others,General promotions and newsletters.
+RB-19795,33,8,5633.316000000001,Ross Baird,2,2,1,221,Lost,Try re-engagement campaigns or surveys.
+RC-19825,370,6,966.409,Roy Collins,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+RC-19960,111,6,885.7520000000001,Ryan Crowe,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+RD-19480,73,8,4272.93,Rick Duston,3,2,2,322,Others,General promotions and newsletters.
+RD-19585,181,10,2912.8940000000002,Rob Dowd,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+RD-19660,115,5,2786.632,Robert Dilbeck,4,4,2,442,Loyal Customers,Offer loyalty points or free gifts.
+RD-19720,22,10,1419.737,Roger Demir,1,1,4,114,Others,General promotions and newsletters.
+RD-19810,15,8,1137.616,Ross DeVincentis,1,2,4,124,Others,General promotions and newsletters.
+RD-19900,115,9,3133.924,Ruben Dartt,4,1,2,412,New Customers,Send welcome emails and first-time coupons.
+RD-19930,43,4,970.9420000000001,Russell D'Ascenzo,2,5,4,254,At Risk,Send win-back offers or reminders.
+RE-19405,1098,1,48.36,Ricardo Emerson,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+RE-19450,303,5,876.696,Richard Eichhorn,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+RF-19345,391,8,3309.15,Randy Ferguson,5,2,2,522,New Customers,Send welcome emails and first-time coupons.
+RF-19735,90,7,2341.2960000000003,Roland Fjeld,3,3,3,333,Others,General promotions and newsletters.
+RF-19840,7,8,945.222,Roy Französisch,1,2,5,125,Others,General promotions and newsletters.
+RH-19495,33,5,3621.3759999999997,Rick Hansen,2,4,2,242,At Risk,Send win-back offers or reminders.
+RH-19510,468,6,6979.18,Rick Huthwaite,5,3,1,531,Loyal Customers,Offer loyalty points or free gifts.
+RH-19555,520,2,740.382,Ritsa Hightower,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+RH-19600,535,3,2085.7400000000002,Rob Haberlin,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+RK-19300,120,3,1460.192,Ralph Kennedy,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+RL-19615,122,8,6234.91,Rob Lucas,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+RM-19375,346,6,1453.474,Raymond Messe,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+RM-19675,7,5,5979.0960000000005,Robert Marley,1,4,1,141,At Risk,Send win-back offers or reminders.
+RM-19750,300,1,98.35,Roland Murray,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+RO-19780,36,7,3815.478,Rose O'Brian,2,3,2,232,Others,General promotions and newsletters.
+RP-19270,497,4,954.6452,Rachel Payne,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+RP-19390,34,12,5153.084000000001,Resi Pölking,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+RP-19855,29,8,2170.716,Roy Phan,2,2,3,223,Others,General promotions and newsletters.
+RR-19315,20,2,615.932,Ralph Ritter,1,5,5,155,At Risk,Send win-back offers or reminders.
+RR-19525,171,6,3302.2619999999997,Rick Reed,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+RS-19420,77,5,3221.29,Ricardo Sperren,3,4,2,342,Others,General promotions and newsletters.
+RS-19765,37,8,4159.7699999999995,Roland Schwarz,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+RS-19870,20,2,22.328,Roy Skaria,1,5,5,155,At Risk,Send win-back offers or reminders.
+RW-19540,121,7,7397.401,Rick Wilson,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+RW-19630,90,9,3279.746,Rob Williams,3,1,2,312,Others,General promotions and newsletters.
+RW-19690,80,5,3495.646,Robert Waldorf,3,4,2,342,Others,General promotions and newsletters.
+SA-20830,64,10,4767.3415,Sue Ann Reed,3,1,1,311,Others,General promotions and newsletters.
+SB-20170,202,3,1348.02,Sarah Bern,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+SB-20185,189,6,6410.996,Sarah Brown,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+SB-20290,48,7,8057.8910000000005,Sean Braxton,2,3,1,231,Others,General promotions and newsletters.
+SC-20020,782,5,3362.9636,Sam Craven,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+SC-20050,41,9,4624.572,Sample Company A,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+SC-20095,350,9,14142.333999999999,Sanjit Chand,5,1,1,511,New Customers,Send welcome emails and first-time coupons.
+SC-20230,150,4,4371.9580000000005,Scot Coram,4,5,1,451,Loyal Customers,Offer loyalty points or free gifts.
+SC-20260,188,8,3729.7929999999997,Scott Cohen,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+SC-20305,30,7,3979.065,Sean Christensen,2,3,2,232,Others,General promotions and newsletters.
+SC-20380,31,9,5992.536,Shahid Collister,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+SC-20440,37,7,1874.998,Shaun Chance,2,3,3,233,Others,General promotions and newsletters.
+SC-20575,93,5,902.7280000000001,Sonia Cooley,3,4,5,345,Others,General promotions and newsletters.
+SC-20680,127,6,1254.64,Steve Carroll,4,3,4,434,Loyal Customers,Offer loyalty points or free gifts.
+SC-20695,90,10,2576.408,Steve Chapman,3,1,3,313,Others,General promotions and newsletters.
+SC-20725,188,11,5226.21,Steven Cartwright,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+SC-20770,42,7,4492.657,Stewart Carmichael,2,3,1,231,Others,General promotions and newsletters.
+SC-20800,31,4,279.25600000000003,Stuart Calhoun,2,5,5,255,At Risk,Send win-back offers or reminders.
+SC-20845,132,2,280.632,Sung Chung,4,5,5,455,Champions,Give exclusive discounts or VIP rewards.
+SD-20485,201,9,6121.114,Shirley Daniels,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+SE-20110,10,11,12209.438000000002,Sanjit Engle,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+SF-20065,60,7,763.5459999999999,Sandra Flanagan,3,3,5,335,Others,General promotions and newsletters.
+SF-20200,60,9,3422.786,Sarah Foster,3,1,2,312,Others,General promotions and newsletters.
+SF-20965,49,9,3336.5350000000003,Sylvia Foulston,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+SG-20080,9,3,3406.581,Sandra Glassco,1,5,2,152,At Risk,Send win-back offers or reminders.
+SG-20470,184,8,1884.798,Sheri Gordon,4,2,3,423,New Customers,Send welcome emails and first-time coupons.
+SG-20605,109,6,3124.832,Speros Goranitis,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+SG-20890,227,3,47.946,Susan Gilcrest,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+SH-19975,30,13,3406.8395,Sally Hughsby,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+SH-20395,24,10,2180.718,Shahid Hopkins,1,1,3,113,Others,General promotions and newsletters.
+SH-20635,766,2,2096.3920000000003,Stefanie Holloman,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+SJ-20125,96,12,3949.656,Sanjit Jacobs,3,1,2,312,Others,General promotions and newsletters.
+SJ-20215,30,6,1341.036,Sarah Jordon,2,3,4,234,Others,General promotions and newsletters.
+SJ-20500,254,5,1318.776,Shirley Jackson,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+SK-19990,9,3,883.409,Sally Knutson,1,5,5,155,At Risk,Send win-back offers or reminders.
+SL-20155,71,7,3053.012,Sara Luxemburg,3,3,2,332,Others,General promotions and newsletters.
+SM-20005,422,4,244.494,Sally Matthias,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+SM-20320,80,5,25043.05,Sean Miller,3,4,1,341,Others,General promotions and newsletters.
+SM-20905,607,1,1043.0410000000002,Susan MacKendrick,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+SM-20950,26,12,5563.392,Suzanne McNair,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+SN-20560,112,6,1860.4179999999997,Skye Norling,4,3,3,433,Loyal Customers,Offer loyalty points or free gifts.
+SN-20710,80,7,3127.9592,Steve Nguyen,3,3,2,332,Others,General promotions and newsletters.
+SO-20335,30,6,2602.5755,Sean O'Donnell,2,3,3,233,Others,General promotions and newsletters.
+SP-20545,328,6,1306.086,Sibella Parks,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+SP-20620,48,9,5440.319,Stefania Perrino,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+SP-20650,387,9,1872.4360000000001,Stephanie Phelps,5,1,3,513,New Customers,Send welcome emails and first-time coupons.
+SP-20860,80,10,4282.9400000000005,Sung Pak,3,1,1,311,Others,General promotions and newsletters.
+SP-20920,71,6,3990.689,Susan Pistek,3,3,2,332,Others,General promotions and newsletters.
+SR-20425,9,5,3233.4810000000007,Sharelle Roach,1,4,2,142,At Risk,Send win-back offers or reminders.
+SR-20740,197,8,4345.8859999999995,Steven Roelle,4,2,1,421,New Customers,Send welcome emails and first-time coupons.
+SS-20140,16,8,1324.028,Saphhira Shifley,1,2,4,124,Others,General promotions and newsletters.
+SS-20410,111,6,3056.807,Shahid Shariari,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+SS-20515,492,3,613.4,Shirley Schmidt,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+SS-20590,433,6,418.49,Sonia Sunley,5,3,5,535,Loyal Customers,Offer loyalty points or free gifts.
+SS-20875,121,5,964.6360000000001,Sung Shariari,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+ST-20530,126,7,433.34000000000003,Shui Tom,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+SU-20665,21,7,2595.364,Stephanie Ulpright,1,3,3,133,Others,General promotions and newsletters.
+SV-20365,102,10,11470.95,Seth Vernon,3,1,1,311,Others,General promotions and newsletters.
+SV-20785,321,9,4105.305,Stewart Visinsky,5,1,2,512,New Customers,Send welcome emails and first-time coupons.
+SV-20815,77,4,1271.0900000000001,Stuart Van,3,5,4,354,Others,General promotions and newsletters.
+SV-20935,3,8,1903.491,Susan Vittorini,1,2,3,123,Others,General promotions and newsletters.
+SW-20245,82,7,1085.078,Scot Wooten,3,3,4,334,Others,General promotions and newsletters.
+SW-20275,31,6,1966.65,Scott Williamson,2,3,3,233,Others,General promotions and newsletters.
+SW-20350,163,3,1019.044,Sean Wendt,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+SW-20455,163,7,2921.544,Shaun Weien,4,3,2,432,Loyal Customers,Offer loyalty points or free gifts.
+SW-20755,535,2,758.6959999999999,Steven Ward,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+SZ-20035,36,11,3625.329,Sam Zeldin,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+TA-21385,70,4,14595.62,Tom Ashbrook,3,5,1,351,Others,General promotions and newsletters.
+TB-21055,120,5,1467.881,Ted Butterfield,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
+TB-21175,59,4,3589.296,Thomas Boland,3,5,2,352,Others,General promotions and newsletters.
+TB-21190,50,4,816.1740000000001,Thomas Brumley,2,5,5,255,At Risk,Send win-back offers or reminders.
+TB-21250,350,7,1602.3760000000002,Tim Brockman,5,3,4,534,Loyal Customers,Offer loyalty points or free gifts.
+TB-21280,584,6,2198.45,Toby Braunhardt,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+TB-21355,147,5,834.328,Todd Boyes,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+TB-21400,203,7,9133.99,Tom Boeckenhauer,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+TB-21520,108,9,4737.486,Tracy Blumstein,4,1,1,411,New Customers,Send welcome emails and first-time coupons.
+TB-21595,286,5,1387.559,Troy Blackwell,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+TB-21625,31,9,2797.668,Trudy Brown,2,1,2,212,Lost,Try re-engagement campaigns or surveys.
+TC-20980,400,5,19052.217999999997,Tamara Chand,5,4,1,541,Loyal Customers,Offer loyalty points or free gifts.
+TC-21145,107,1,1038.26,Theresa Coyne,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+TC-21295,28,8,4266.812,Toby Carlisle,2,2,2,222,Lost,Try re-engagement campaigns or surveys.
+TC-21475,154,9,1244.976,Tony Chapman,4,1,4,414,New Customers,Send welcome emails and first-time coupons.
+TC-21535,5,7,742.5580000000001,Tracy Collins,1,3,5,135,Others,General promotions and newsletters.
+TD-20995,38,9,1434.5480000000002,Tamara Dahlen,2,1,4,214,Others,General promotions and newsletters.
+TG-21310,338,5,3058.3720000000003,Toby Gnade,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+TG-21640,115,4,2074.661,Trudy Glocke,4,5,3,453,Loyal Customers,Offer loyalty points or free gifts.
+TH-21100,345,5,2422.824,Thea Hendricks,5,4,3,543,Loyal Customers,Offer loyalty points or free gifts.
+TH-21115,59,4,2942.772,Thea Hudgings,3,5,2,352,Others,General promotions and newsletters.
+TH-21235,118,8,1022.201,Tiffany House,4,2,4,424,New Customers,Send welcome emails and first-time coupons.
+TH-21550,73,7,4234.0960000000005,Tracy Hopkins,3,3,2,332,Others,General promotions and newsletters.
+TM-21010,104,8,2955.2259999999997,Tamara Manning,4,2,2,422,New Customers,Send welcome emails and first-time coupons.
+TM-21490,131,3,1094.6779999999999,Tony Molinari,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+TN-21040,91,7,3130.221,Tanja Norvell,3,3,2,332,Others,General promotions and newsletters.
+TP-21130,9,9,4454.056,Theone Pippenger,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+TP-21415,105,5,5329.0048,Tom Prescott,4,4,1,441,Loyal Customers,Offer loyalty points or free gifts.
+TP-21565,351,4,1936.6400000000003,Tracy Poddar,5,5,3,553,Loyal Customers,Offer loyalty points or free gifts.
+TR-21325,194,5,675.9419999999999,Toby Ritter,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+TS-21085,358,2,4.833000000000001,Thais Sissman,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+TS-21160,505,6,2163.6240000000003,Theresa Swint,5,3,3,533,Loyal Customers,Offer loyalty points or free gifts.
+TS-21205,199,7,5371.09,Thomas Seio,4,3,1,431,Loyal Customers,Offer loyalty points or free gifts.
+TS-21340,227,5,974.782,Toby Swindell,5,4,4,544,Champions,Give exclusive discounts or VIP rewards.
+TS-21370,37,6,11891.751,Todd Sumrall,2,3,1,231,Others,General promotions and newsletters.
+TS-21430,173,5,2054.14,Tom Stivers,4,4,3,443,Loyal Customers,Offer loyalty points or free gifts.
+TS-21505,12,6,2243.274,Tony Sayre,1,3,3,133,Others,General promotions and newsletters.
+TS-21610,56,7,2820.424,Troy Staebel,3,3,2,332,Others,General promotions and newsletters.
+TS-21655,239,5,3368.094,Trudy Schmidt,5,4,2,542,Loyal Customers,Offer loyalty points or free gifts.
+TT-21070,32,7,4915.602,Ted Trevino,2,3,1,231,Others,General promotions and newsletters.
+TT-21220,184,8,1427.0439999999999,Thomas Thornton,4,2,4,424,New Customers,Send welcome emails and first-time coupons.
+TT-21265,407,3,439.5,Tim Taslimi,5,5,5,555,Champions,Give exclusive discounts or VIP rewards.
+TT-21460,13,7,5364.808,Tonja Turnell,1,3,1,131,Others,General promotions and newsletters.
+TW-21025,65,7,5278.826,Tamara Willingham,3,3,1,331,Others,General promotions and newsletters.
+TZ-21580,36,4,1707.286,Tracy Zic,2,5,4,254,At Risk,Send win-back offers or reminders.
+VB-21745,55,6,2005.596,Victoria Brennan,3,3,3,333,Others,General promotions and newsletters.
+VD-21670,582,6,6442.254,Valerie Dominguez,5,3,1,531,Loyal Customers,Offer loyalty points or free gifts.
+VF-21715,14,5,847.944,Vicky Freymann,1,4,5,145,At Risk,Send win-back offers or reminders.
+VG-21790,155,6,846.01,Vivek Gonzalez,4,3,5,435,Loyal Customers,Offer loyalty points or free gifts.
+VG-21805,287,5,427.372,Vivek Grady,5,4,5,545,Champions,Give exclusive discounts or VIP rewards.
+VM-21685,55,7,2454.866,Valerie Mitchum,3,3,3,333,Others,General promotions and newsletters.
+VM-21835,118,5,380.69,Vivian Mathis,4,4,5,445,Champions,Give exclusive discounts or VIP rewards.
+VP-21730,31,3,993.902,Victor Preis,2,5,4,254,At Risk,Send win-back offers or reminders.
+VP-21760,76,7,3360.5260000000003,Victoria Pisteka,3,3,2,332,Others,General promotions and newsletters.
+VS-21820,222,4,1055.981,Vivek Sundaresam,4,5,4,454,Champions,Give exclusive discounts or VIP rewards.
+VT-21700,1001,2,1736.596,Valerie Takahito,5,5,4,554,Champions,Give exclusive discounts or VIP rewards.
+VW-21775,29,10,6134.0380000000005,Victoria Wilson,2,1,1,211,Lost,Try re-engagement campaigns or surveys.
+WB-21850,21,11,6160.102,William Brown,1,1,1,111,Lost,Try re-engagement campaigns or surveys.
+XP-21865,44,11,2374.658,Xylona Preis,2,1,3,213,Others,General promotions and newsletters.
+YC-21895,5,5,5454.35,Yoseph Carroll,1,4,1,141,At Risk,Send win-back offers or reminders.
+YS-21880,10,8,6720.4439999999995,Yana Sorensen,1,2,1,121,Lost,Try re-engagement campaigns or surveys.
+ZC-21910,55,13,8025.707,Zuschuss Carroll,3,1,1,311,Others,General promotions and newsletters.
+ZD-21925,203,5,1493.9440000000002,Zuschuss Donatelli,4,4,4,444,Champions,Give exclusive discounts or VIP rewards.
